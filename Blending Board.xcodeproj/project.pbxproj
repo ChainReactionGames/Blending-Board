@@ -15,6 +15,8 @@
 		8391DD7D24B376330082A4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8391DD7B24B376330082A4AA /* LaunchScreen.storyboard */; };
 		8391DD8824B376330082A4AA /* Blending_BoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD8724B376330082A4AA /* Blending_BoardTests.swift */; };
 		8391DD9324B376330082A4AA /* Blending_BoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD9224B376330082A4AA /* Blending_BoardUITests.swift */; };
+		8391DDA324B383900082A4AA /* Letter Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA224B383900082A4AA /* Letter Set.swift */; };
+		8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA424B383C10082A4AA /* Letter Pack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		8391DD9224B376330082A4AA /* Blending_BoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blending_BoardUITests.swift; sourceTree = "<group>"; };
 		8391DD9424B376330082A4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8391DDA024B378A60082A4AA /* Blending Board.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Blending Board.entitlements"; sourceTree = "<group>"; };
+		8391DDA224B383900082A4AA /* Letter Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Letter Set.swift"; sourceTree = "<group>"; };
+		8391DDA424B383C10082A4AA /* Letter Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Letter Pack.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				8391DD7024B376320082A4AA /* AppDelegate.swift */,
 				8391DD7224B376320082A4AA /* SceneDelegate.swift */,
 				8391DD7424B376320082A4AA /* ViewController.swift */,
+				8391DDA124B383830082A4AA /* Model */,
 				8391DD7624B376320082A4AA /* Main.storyboard */,
 				8391DD7924B376330082A4AA /* Assets.xcassets */,
 				8391DD7B24B376330082A4AA /* LaunchScreen.storyboard */,
@@ -128,6 +133,15 @@
 				8391DD9424B376330082A4AA /* Info.plist */,
 			);
 			path = "Blending BoardUITests";
+			sourceTree = "<group>";
+		};
+		8391DDA124B383830082A4AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8391DDA224B383900082A4AA /* Letter Set.swift */,
+				8391DDA424B383C10082A4AA /* Letter Pack.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +277,8 @@
 				8391DD7524B376320082A4AA /* ViewController.swift in Sources */,
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
+				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,
+				8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
