@@ -27,6 +27,7 @@
 		8391DDA324B383900082A4AA /* Letter Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA224B383900082A4AA /* Letter Set.swift */; };
 		8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA424B383C10082A4AA /* Letter Pack.swift */; };
 		83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8007E24B3CD5B0082F71C /* LetterCard.swift */; };
+		83B8008124B3D28D0082F71C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8008024B3D28D0082F71C /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		8391DDAE24B385DD0082A4AA /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		8391DDAF24B385DD0082A4AA /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
 		83B8007E24B3CD5B0082F71C /* LetterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCard.swift; sourceTree = "<group>"; };
+		83B8008024B3D28D0082F71C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				8391DDA124B383830082A4AA /* Model */,
 				8391DD7624B376320082A4AA /* Main.storyboard */,
 				8391DD7924B376330082A4AA /* Assets.xcassets */,
+				83B8008024B3D28D0082F71C /* Colors.xcassets */,
 				8391DD7B24B376330082A4AA /* LaunchScreen.storyboard */,
 				8391DD7E24B376330082A4AA /* Info.plist */,
 			);
@@ -287,6 +290,7 @@
 			files = (
 				8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */,
 				8305207124B3C48100256516 /* SF-Pro-Rounded-Bold.otf in Resources */,
+				83B8008124B3D28D0082F71C /* Colors.xcassets in Resources */,
 				8305207224B3C48100256516 /* SF-Pro-Rounded-Heavy.otf in Resources */,
 				8305207324B3C48100256516 /* SF-Pro-Rounded-Light.otf in Resources */,
 				8305207424B3C48100256516 /* SF-Pro-Rounded-Medium.otf in Resources */,

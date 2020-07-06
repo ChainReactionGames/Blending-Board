@@ -29,11 +29,14 @@ class LetterCard: UIView {
     @objc func panInSelf(_ pan: UIPanGestureRecognizer) {
         let trans = pan.translation(in: self.superview)
         switch pan.state {
-        case .ended:
-            UIView.animate(withDuration: Double(sqrt(pow(trans.x, 2) + pow(trans.y, 2)) / 250)) {
+        case .ended, .cancelled, .failed:
+            UIView.animate(withDuration: Double(sqrt(pow(trans.x, 2) + pow(trans.y, 2)) / 250), animations: {
                 self.transform = .identity
-            }
+            }, completion: { _ in
+                self.layer.zPosition = 1
+            })
         default:
+            self.layer.borderColor = UIColor.lightGray.cgColor
             self.transform = CGAffineTransform(translationX: trans.x, y: trans.y).rotated(by: pow(abs(trans.x), 1) / 600 * (trans.x < 0 ? -.pi : .pi))
         }
     }
