@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA824B385DC0082A4AA /* SF-Pro-Rounded-Black.otf */; };
+		8305207124B3C48100256516 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAC24B385DC0082A4AA /* SF-Pro-Rounded-Bold.otf */; };
+		8305207224B3C48100256516 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAF24B385DD0082A4AA /* SF-Pro-Rounded-Heavy.otf */; };
+		8305207324B3C48100256516 /* SF-Pro-Rounded-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAA24B385DC0082A4AA /* SF-Pro-Rounded-Light.otf */; };
+		8305207424B3C48100256516 /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAB24B385DC0082A4AA /* SF-Pro-Rounded-Medium.otf */; };
+		8305207524B3C48100256516 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA724B385DB0082A4AA /* SF-Pro-Rounded-Regular.otf */; };
+		8305207624B3C48100256516 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAE24B385DD0082A4AA /* SF-Pro-Rounded-Semibold.otf */; };
+		8305207724B3C48100256516 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA924B385DC0082A4AA /* SF-Pro-Rounded-Thin.otf */; };
+		8305207824B3C48100256516 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAD24B385DD0082A4AA /* SF-Pro-Rounded-Ultralight.otf */; };
 		8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD7024B376320082A4AA /* AppDelegate.swift */; };
 		8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD7224B376320082A4AA /* SceneDelegate.swift */; };
 		8391DD7524B376320082A4AA /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD7424B376320082A4AA /* BoardViewController.swift */; };
@@ -17,6 +26,7 @@
 		8391DD9324B376330082A4AA /* Blending_BoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD9224B376330082A4AA /* Blending_BoardUITests.swift */; };
 		8391DDA324B383900082A4AA /* Letter Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA224B383900082A4AA /* Letter Set.swift */; };
 		8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA424B383C10082A4AA /* Letter Pack.swift */; };
+		83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8007E24B3CD5B0082F71C /* LetterCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +73,7 @@
 		8391DDAD24B385DD0082A4AA /* SF-Pro-Rounded-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Ultralight.otf"; sourceTree = "<group>"; };
 		8391DDAE24B385DD0082A4AA /* SF-Pro-Rounded-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Semibold.otf"; sourceTree = "<group>"; };
 		8391DDAF24B385DD0082A4AA /* SF-Pro-Rounded-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Heavy.otf"; sourceTree = "<group>"; };
+		83B8007E24B3CD5B0082F71C /* LetterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +128,7 @@
 				8391DD7024B376320082A4AA /* AppDelegate.swift */,
 				8391DD7224B376320082A4AA /* SceneDelegate.swift */,
 				8391DD7424B376320082A4AA /* BoardViewController.swift */,
+				83B8007E24B3CD5B0082F71C /* LetterCard.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
 				8391DD7624B376320082A4AA /* Main.storyboard */,
@@ -273,6 +285,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */,
+				8305207124B3C48100256516 /* SF-Pro-Rounded-Bold.otf in Resources */,
+				8305207224B3C48100256516 /* SF-Pro-Rounded-Heavy.otf in Resources */,
+				8305207324B3C48100256516 /* SF-Pro-Rounded-Light.otf in Resources */,
+				8305207424B3C48100256516 /* SF-Pro-Rounded-Medium.otf in Resources */,
+				8305207524B3C48100256516 /* SF-Pro-Rounded-Regular.otf in Resources */,
+				8305207624B3C48100256516 /* SF-Pro-Rounded-Semibold.otf in Resources */,
+				8305207724B3C48100256516 /* SF-Pro-Rounded-Thin.otf in Resources */,
+				8305207824B3C48100256516 /* SF-Pro-Rounded-Ultralight.otf in Resources */,
 				8391DD7D24B376330082A4AA /* LaunchScreen.storyboard in Resources */,
 				8391DD7A24B376330082A4AA /* Assets.xcassets in Resources */,
 				8391DD7824B376320082A4AA /* Main.storyboard in Resources */,
@@ -303,6 +324,7 @@
 				8391DD7524B376320082A4AA /* BoardViewController.swift in Sources */,
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
+				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
 				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,
 				8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */,
 			);
