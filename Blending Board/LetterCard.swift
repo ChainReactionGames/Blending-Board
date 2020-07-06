@@ -36,6 +36,7 @@ class LetterCard: UIView {
                 self.layer.zPosition = 1
             })
         default:
+            self.layer.zPosition = 2
             self.layer.borderColor = UIColor.lightGray.cgColor
             self.transform = CGAffineTransform(translationX: trans.x, y: trans.y).rotated(by: pow(abs(trans.x), 1) / 600 * (trans.x < 0 ? -.pi : .pi))
         }
