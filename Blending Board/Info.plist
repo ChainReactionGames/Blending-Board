@@ -62,5 +62,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Pro-Rounded-Black</string>
+		<string>SF-Pro-Rounded-Bold</string>
+		<string>SF-Pro-Rounded-Heavy</string>
+		<string>SF-Pro-Rounded-Light</string>
+		<string>SF-Pro-Rounded-Medium</string>
+		<string>SF-Pro-Rounded-Regular</string>
+		<string>SF-Pro-Rounded-Semibold</string>
+		<string>SF-Pro-Rounded-Thin</string>
+		<string>SF-Pro-Rounded-Ultralight</string>
+	</array>
 </dict>
 </plist>
