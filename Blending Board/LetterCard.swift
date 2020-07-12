@@ -83,6 +83,7 @@ class LetterCard: UIView {
         layer.cornerCurve = .continuous
         layer.cornerRadius = 15
         let pan = UIPanGestureRecognizer(target: self, action: #selector(panInSelf(_:)))
+        pan.cancelsTouchesInView = true
         self.addGestureRecognizer(pan)
         self.isUserInteractionEnabled = true
     }
@@ -108,6 +109,7 @@ class CardStack: UIView {
     func setup() {
         for i in 0 ..< cards.count {
             cards[i].position = Double(i)
+            cards[i].generateUI()
         }
     }
 }

@@ -38,26 +38,26 @@
                                         <rect key="frame" x="0.0" y="9" width="659" height="564"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zxg-ao-z9B" userLabel="Letter Card 4" customClass="LetterCard" customModule="Blending_Board" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="-47.5" width="659" height="659"/>
+                                                <rect key="frame" x="30" y="-77.5" width="599" height="599"/>
                                                 <subviews>
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AM-ge-37H">
-                                                        <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="599" height="599"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RV0-LP-7RU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="599" height="599"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
                                                     </visualEffectView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcp-fK-7ih">
-                                                        <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="599" height="599"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     </view>
                                                     <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZn-ff-gDa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="599" height="599"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                                     </view>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="e" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15V-8v-vlZ">
-                                                        <rect key="frame" x="33" y="33" width="593" height="593"/>
+                                                        <rect key="frame" x="30" y="30" width="539" height="539"/>
                                                         <color key="textColor" systemColor="systemBlueColor"/>
                                                         <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="62"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -291,18 +291,19 @@
                                             <constraint firstItem="Zxg-ao-z9B" firstAttribute="centerX" secondItem="gB6-7Z-pWJ" secondAttribute="centerX" id="SOM-S4-zU4"/>
                                             <constraint firstItem="JBM-uV-YJe" firstAttribute="centerY" secondItem="gB6-7Z-pWJ" secondAttribute="centerY" constant="-20" id="fI5-ix-NNX"/>
                                             <constraint firstItem="BVl-WJ-DSS" firstAttribute="width" secondItem="gB6-7Z-pWJ" secondAttribute="width" id="fyP-Yc-DQx"/>
-                                            <constraint firstItem="Zxg-ao-z9B" firstAttribute="width" secondItem="gB6-7Z-pWJ" secondAttribute="width" id="iJy-uZ-hQi"/>
+                                            <constraint firstItem="Zxg-ao-z9B" firstAttribute="width" secondItem="gB6-7Z-pWJ" secondAttribute="width" constant="-60" id="iJy-uZ-hQi"/>
                                             <constraint firstItem="BVl-WJ-DSS" firstAttribute="centerY" secondItem="gB6-7Z-pWJ" secondAttribute="centerY" id="o7A-7Z-3Qs"/>
                                             <constraint firstItem="JBM-uV-YJe" firstAttribute="centerX" secondItem="gB6-7Z-pWJ" secondAttribute="centerX" id="o8r-Rf-9ty"/>
                                             <constraint firstItem="ail-Qf-qBL" firstAttribute="width" secondItem="ail-Qf-qBL" secondAttribute="height" multiplier="1:1" id="oTi-NK-jOg"/>
                                             <constraint firstItem="BVl-WJ-DSS" firstAttribute="centerX" secondItem="gB6-7Z-pWJ" secondAttribute="centerX" id="tmX-NW-baK"/>
-                                            <constraint firstItem="Zxg-ao-z9B" firstAttribute="centerY" secondItem="gB6-7Z-pWJ" secondAttribute="centerY" id="uak-fx-jQX"/>
+                                            <constraint firstItem="Zxg-ao-z9B" firstAttribute="centerY" secondItem="gB6-7Z-pWJ" secondAttribute="centerY" constant="-60" id="uak-fx-jQX"/>
                                             <constraint firstItem="ail-Qf-qBL" firstAttribute="centerX" secondItem="gB6-7Z-pWJ" secondAttribute="centerX" id="v3e-GU-clk"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="cards" destination="BVl-WJ-DSS" collectionClass="NSMutableArray" id="omK-yb-4Pp"/>
                                             <outletCollection property="cards" destination="JBM-uV-YJe" collectionClass="NSMutableArray" id="Cok-1j-YzF"/>
                                             <outletCollection property="cards" destination="ail-Qf-qBL" collectionClass="NSMutableArray" id="Pb4-NG-RrI"/>
+                                            <outletCollection property="cards" destination="Zxg-ao-z9B" collectionClass="NSMutableArray" id="Rn6-LG-cxZ"/>
                                         </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4m-aJ-tD1">
@@ -443,18 +444,83 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vva-4K-CQp" userLabel="Letter Card 1" customClass="LetterCard" customModule="Blending_Board" customModuleProvider="target">
+                                <rect key="frame" x="353.5" y="172.5" width="659" height="659"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAU-jI-X0A">
+                                        <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rQH-2b-vxZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                    </visualEffectView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YOZ-AW-Ar0">
+                                        <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLb-zv-Bio">
+                                        <rect key="frame" x="0.0" y="0.0" width="659" height="659"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </view>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="e" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tt5-id-MN7">
+                                        <rect key="frame" x="33" y="33" width="593" height="593"/>
+                                        <color key="textColor" systemColor="systemBlueColor"/>
+                                        <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="62"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="widthClass=regular">
+                                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="100"/>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="175"/>
+                                        </variation>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eLb-zv-Bio" firstAttribute="centerY" secondItem="YOZ-AW-Ar0" secondAttribute="centerY" id="009-SW-6zO"/>
+                                    <constraint firstItem="YOZ-AW-Ar0" firstAttribute="height" secondItem="Vva-4K-CQp" secondAttribute="height" id="1kE-lR-TaJ"/>
+                                    <constraint firstItem="YOZ-AW-Ar0" firstAttribute="width" secondItem="Vva-4K-CQp" secondAttribute="width" id="A4k-NQ-zHZ"/>
+                                    <constraint firstItem="eLb-zv-Bio" firstAttribute="width" secondItem="YOZ-AW-Ar0" secondAttribute="width" id="CCW-E6-Vas"/>
+                                    <constraint firstItem="bAU-jI-X0A" firstAttribute="centerY" secondItem="Vva-4K-CQp" secondAttribute="centerY" id="Chz-JX-ACg"/>
+                                    <constraint firstItem="Tt5-id-MN7" firstAttribute="width" secondItem="Vva-4K-CQp" secondAttribute="width" multiplier="0.9" id="Dph-4q-JEH"/>
+                                    <constraint firstItem="bAU-jI-X0A" firstAttribute="centerX" secondItem="Vva-4K-CQp" secondAttribute="centerX" id="Qny-cr-fjA"/>
+                                    <constraint firstItem="Tt5-id-MN7" firstAttribute="centerY" secondItem="Vva-4K-CQp" secondAttribute="centerY" id="U2Q-Bi-9Dq"/>
+                                    <constraint firstItem="bAU-jI-X0A" firstAttribute="width" secondItem="Vva-4K-CQp" secondAttribute="width" id="UvJ-br-pMq"/>
+                                    <constraint firstItem="eLb-zv-Bio" firstAttribute="centerX" secondItem="YOZ-AW-Ar0" secondAttribute="centerX" id="YyS-g1-eex"/>
+                                    <constraint firstItem="YOZ-AW-Ar0" firstAttribute="centerY" secondItem="Vva-4K-CQp" secondAttribute="centerY" id="ZFB-ZI-eNr"/>
+                                    <constraint firstAttribute="width" secondItem="Vva-4K-CQp" secondAttribute="height" multiplier="1:1" id="afE-qG-Qvc"/>
+                                    <constraint firstItem="Tt5-id-MN7" firstAttribute="centerX" secondItem="Vva-4K-CQp" secondAttribute="centerX" id="dLJ-Q1-Ar4"/>
+                                    <constraint firstItem="bAU-jI-X0A" firstAttribute="height" secondItem="Vva-4K-CQp" secondAttribute="height" id="hpj-lx-YdL"/>
+                                    <constraint firstItem="eLb-zv-Bio" firstAttribute="height" secondItem="YOZ-AW-Ar0" secondAttribute="height" id="rkl-cY-pnB"/>
+                                    <constraint firstItem="YOZ-AW-Ar0" firstAttribute="centerX" secondItem="Vva-4K-CQp" secondAttribute="centerX" id="ruq-8a-QeY"/>
+                                    <constraint firstItem="Tt5-id-MN7" firstAttribute="height" secondItem="Vva-4K-CQp" secondAttribute="height" multiplier="0.9" id="vw7-GR-uR3"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="backView" destination="YOZ-AW-Ar0" id="xLo-MI-yLK"/>
+                                    <outlet property="blur" destination="bAU-jI-X0A" id="C01-wf-nzR"/>
+                                    <outlet property="centerYConstraint" destination="o7A-7Z-3Qs" id="XFB-Pb-3St"/>
+                                    <outlet property="letterField" destination="Tt5-id-MN7" id="79v-Kv-Iqc"/>
+                                    <outlet property="tintView" destination="eLb-zv-Bio" id="UDa-dT-YOt"/>
+                                    <outlet property="widthConstraint" destination="fyP-Yc-DQx" id="Acv-Au-ntu"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Vva-4K-CQp" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.48243" id="5Sw-Ce-7pg"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7kS-DH-wsS"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="width" secondItem="H1M-3y-yyQ" secondAttribute="width" id="Aa3-HN-NAa"/>
                             <constraint firstItem="dyf-qf-c40" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Lj9-Vs-25K"/>
                             <constraint firstItem="dyf-qf-c40" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" priority="999" constant="-40" id="N5V-eP-dga"/>
                             <constraint firstItem="dyf-qf-c40" firstAttribute="height" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.6" constant="-20" id="TBo-0H-Ojz"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TIC-Qt-QAA"/>
+                            <constraint firstItem="Vva-4K-CQp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="UHf-oS-Mf9"/>
+                            <constraint firstItem="Vva-4K-CQp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d6K-em-WsM"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="height" secondItem="H1M-3y-yyQ" secondAttribute="height" id="eJe-dh-kqT"/>
                             <constraint firstItem="dyf-qf-c40" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ean-OK-3Mc"/>
+                            <constraint firstItem="Vva-4K-CQp" firstAttribute="width" secondItem="Vva-4K-CQp" secondAttribute="height" multiplier="1:1" id="lwi-HT-tt0"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerY" secondItem="H1M-3y-yyQ" secondAttribute="centerY" id="mWr-2N-IPF"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerX" secondItem="H1M-3y-yyQ" secondAttribute="centerX" id="nhL-0M-LhS"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="pZO-pQ-MmU"/>
