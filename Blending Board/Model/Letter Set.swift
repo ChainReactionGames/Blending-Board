@@ -49,4 +49,13 @@ extension LetterSet {
 
     static var none = LetterSet(position: .all, letters: [])
 }
-
+typealias Letter = String
+extension Letter {
+    static var vowelList = ["a","e","i","o","u"]
+    var isVowel: Bool {
+        Letter.vowelList.contains(self.lowercased())
+    }
+    func standardized() -> String {
+        self.lowercased()
+    }
+}
