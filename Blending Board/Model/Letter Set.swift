@@ -26,7 +26,8 @@ struct LetterSet {
 extension LetterSet {
     
     // MARK: Consonants
-    static var singleConsonants = LetterSet(name: "Single Consonants", position: .sides, letters: ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p ", "qu", "r", "s", "t", "v", "w", "x", "y", "z"])
+    static var singleConsonantsBeginning = LetterSet(name: "Single Consonants", position: .beginning, letters: ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p ", "qu", "r", "s", "t", "v", "w", "x", "y", "z"])
+    static var singleConsonantsEnding = LetterSet(name: "Single Consonants", position: .end, letters: ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p ", "r", "s", "t", "v", "w", "x", "y", "z"])
     static var hBrothers = LetterSet(name: "H Brothers", position: .sides, letters: ["ch", "ph", "sh", "th", "wh"])
     static var beginningBlends = LetterSet(name: "Beginning Blends", position: .beginning, letters: ["bl", "br", "cl", "cr", "dr", "fl", "fr", "gl", "gr", "pl", "pr", "sc", "scr", "shr", "sk", "sl", "sm", "sn", "sp", "spl", "spr", "squ", "st", "str", "sw", "thr", "tr", "tw"])
     static var shortVowelPointers = LetterSet(name: "Short Vowel Pointers", position: .beginning, letters: ["ck", "dge", "tch", "ff", "ll", "ss", "zz"])
@@ -45,7 +46,7 @@ extension LetterSet {
     static var vowelTeamAdvanced = LetterSet(name: "Vowel Team Advanced", position: .middle, letters: ["aw", "eigh", "ew", "ey", "ie", "oe", "oi", "oo", "ou", "ow"])
     static var vowelA = LetterSet(name: "Vowel A", position: .middle, letters: ["al", "all", "wa"])
     
-    static var allSets = [singleConsonants, hBrothers, beginningBlends, shortVowelPointers, endingBlends, magicEEnding, closedSyllable, openSyllable, magicEMiddle, controlledR, shortVowelExceptions, vowelTeamBasic, vowelTeamIntermediate, vowelTeamAdvanced, vowelA]
+    static var allSets = [singleConsonantsBeginning, singleConsonantsEnding,  hBrothers, beginningBlends, shortVowelPointers, endingBlends, magicEEnding, closedSyllable, openSyllable, magicEMiddle, controlledR, shortVowelExceptions, vowelTeamBasic, vowelTeamIntermediate, vowelTeamAdvanced, vowelA]
 
     static var none = LetterSet(position: .all, letters: [])
 }
