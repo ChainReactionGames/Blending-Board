@@ -10,12 +10,13 @@ import UIKit
 class BoardViewController: UIViewController {
 
     @IBOutlet var stacks: [CardStack]!
+    var pack = LetterPack.standardOpen
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        for stack in stacks {
-            stack.setup()
-        }
+        stacks[0].setup(pack.beginning)
+        stacks[1].setup(pack.middle)
+        stacks[2].setup(pack.end)
     }
 
 }

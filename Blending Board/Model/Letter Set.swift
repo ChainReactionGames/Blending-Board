@@ -17,7 +17,7 @@ struct LetterSet {
     }
     var name: String?
     var position: Position
-    var letters: [String]
+    var letters: [Letter]
 }
 
 
