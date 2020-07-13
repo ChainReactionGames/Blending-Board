@@ -16,6 +16,7 @@
 		8305207624B3C48100256516 /* SF-Pro-Rounded-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAE24B385DD0082A4AA /* SF-Pro-Rounded-Semibold.otf */; };
 		8305207724B3C48100256516 /* SF-Pro-Rounded-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA924B385DC0082A4AA /* SF-Pro-Rounded-Thin.otf */; };
 		8305207824B3C48100256516 /* SF-Pro-Rounded-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAD24B385DD0082A4AA /* SF-Pro-Rounded-Ultralight.otf */; };
+		833195A224BCB05A00F02010 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833195A124BCB05A00F02010 /* Colors.swift */; };
 		8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD7024B376320082A4AA /* AppDelegate.swift */; };
 		8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD7224B376320082A4AA /* SceneDelegate.swift */; };
 		8391DD7524B376320082A4AA /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DD7424B376320082A4AA /* BoardViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833195A124BCB05A00F02010 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8391DD6D24B376320082A4AA /* Blending Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blending Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8391DD7024B376320082A4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8391DD7224B376320082A4AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		833195A024BCB04B00F02010 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				833195A124BCB05A00F02010 /* Colors.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
 		8391DD6424B376320082A4AA = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 				83B8007E24B3CD5B0082F71C /* LetterCard.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
+				833195A024BCB04B00F02010 /* Design */,
 				8391DD7624B376320082A4AA /* Main.storyboard */,
 				8391DD7924B376330082A4AA /* Assets.xcassets */,
 				83B8008024B3D28D0082F71C /* Colors.xcassets */,
@@ -328,6 +339,7 @@
 				8391DD7524B376320082A4AA /* BoardViewController.swift in Sources */,
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
+				833195A224BCB05A00F02010 /* Colors.swift in Sources */,
 				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
 				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,
 				8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */,

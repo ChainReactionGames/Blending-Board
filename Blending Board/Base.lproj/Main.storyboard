@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="H1M-3y-yyQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultBackground" translatesAutoresizingMaskIntoConstraints="NO" id="H1M-3y-yyQ" customClass="TintAdjustingBackgroundImage" customModule="Blending_Board" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Oz-Gi-Swv">
@@ -852,6 +852,95 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-vg-0uC">
+                                <rect key="frame" x="951.5" y="947.5" width="394.5" height="48.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tme-Jm-dSa">
+                                        <rect key="frame" x="0.0" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemRedColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4K-j7-Fu9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRf-41-pSS">
+                                        <rect key="frame" x="57.5" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sd3-JE-rzW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hq-kx-hSE">
+                                        <rect key="frame" x="115" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfc-in-nNv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-gW-JyL">
+                                        <rect key="frame" x="172.5" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lco-Xp-tMG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-WV-MEL">
+                                        <rect key="frame" x="230" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemPurpleColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYQ-2Z-eGv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-gd-50d">
+                                        <rect key="frame" x="287.5" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PT8-cA-CO1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-CQ-Wtr">
+                                        <rect key="frame" x="345" y="0.0" width="49.5" height="48.5"/>
+                                        <color key="tintColor" systemColor="systemGrayColor"/>
+                                        <state key="normal" image="circle.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIM-iY-Gyw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -864,10 +953,12 @@
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bEP-Jk-BDq"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="height" secondItem="H1M-3y-yyQ" secondAttribute="height" id="eJe-dh-kqT"/>
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.67" priority="998" id="jLu-TS-RfH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ec6-vg-0uC" secondAttribute="trailing" constant="20" id="k5Z-lc-Lpr"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerY" secondItem="H1M-3y-yyQ" secondAttribute="centerY" id="mWr-2N-IPF"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerX" secondItem="H1M-3y-yyQ" secondAttribute="centerX" id="nhL-0M-LhS"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="pZO-pQ-MmU"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="tfK-rq-VnS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ec6-vg-0uC" secondAttribute="bottom" constant="8" id="ucM-XE-CHM"/>
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" priority="999" id="yGi-k0-WHG"/>
                         </constraints>
                     </view>
@@ -883,6 +974,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="defaultBackground" width="3375" height="2250"/>
         <namedColor name="Dark Dim">
             <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -892,6 +984,24 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

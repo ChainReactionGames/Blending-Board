@@ -18,6 +18,9 @@ class BoardViewController: UIViewController {
         stacks[1].setup(pack.middle)
         stacks[2].setup(pack.end)
     }
-
+    @IBAction func changeTint(_ sender: UIButton) {
+        view.tintColor = sender.tintColor
+    }
+    
 }
 

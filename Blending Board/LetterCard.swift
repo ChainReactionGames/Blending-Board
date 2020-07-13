@@ -6,15 +6,6 @@
 //
 
 import UIKit
-struct Colors {
-    static let text: UIColor = make(named: "Text", defaultColor: .label)
-    static func make(named name: String, defaultColor: UIColor) -> UIColor {
-        if let returningColor = UIColor(named: name) {
-            return returningColor
-        }
-        return defaultColor
-    }
-}
 class LetterCard: UIView {
     override func tintColorDidChange() {
         super.tintColorDidChange()
