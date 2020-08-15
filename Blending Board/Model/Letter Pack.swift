@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LetterPack {
+struct LetterPack: Equatable {
     var name: String?
     var beginning: LetterSet
     var middle: LetterSet
@@ -21,8 +21,8 @@ extension LetterPack {
     
     // MARK: - Default Values
     
-    static var standardClosed = LetterPack(name: "Standard (Closed Syllable)", [.singleConsonants, .closedSyllable, .singleConsonants])
-    static var standardOpen = LetterPack(name: "Standard (Open Syllable)", [.singleConsonants, .openSyllable, .singleConsonants])
+    static var standardClosed = LetterPack(name: "Standard (Closed Syllable)", [.singleConsonantsBeginning, .closedSyllable, .singleConsonantsEnding])
+    static var standardOpen = LetterPack(name: "Standard (Open Syllable)", [.singleConsonantsBeginning, .openSyllable, .singleConsonantsEnding])
     
     static var allPacks = [standardClosed, standardOpen]
 }
