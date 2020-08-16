@@ -853,112 +853,23 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-vg-0uC">
-                                <rect key="frame" x="-52.5" y="517.5" width="352.5" height="42.5"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tme-Jm-dSa">
-                                        <rect key="frame" x="0.0" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4K-j7-Fu9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRf-41-pSS">
-                                        <rect key="frame" x="51.5" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sd3-JE-rzW"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hq-kx-hSE">
-                                        <rect key="frame" x="103" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfc-in-nNv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-gW-JyL">
-                                        <rect key="frame" x="154.5" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lco-Xp-tMG"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-WV-MEL">
-                                        <rect key="frame" x="206" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYQ-2Z-eGv"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-gd-50d">
-                                        <rect key="frame" x="257.5" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PT8-cA-CO1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-CQ-Wtr">
-                                        <rect key="frame" x="309" y="0.0" width="43.5" height="42.5"/>
-                                        <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" image="circle.fill" catalog="system">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            </preferredSymbolConfiguration>
-                                        </state>
-                                        <connections>
-                                            <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIM-iY-Gyw"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-r0-ftK">
-                                <rect key="frame" x="8" y="8" width="304" height="558"/>
+                                <rect key="frame" x="246" y="8" width="66" height="66"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Rwm-QR-lIS">
-                                    <rect key="frame" x="0.0" y="0.0" width="304" height="558"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="5JJ-Tp-NtP">
-                                            <rect key="frame" x="8" y="8" width="288" height="542"/>
+                                            <rect key="frame" x="8" y="8" width="50" height="50"/>
                                             <subviews>
-                                                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iay-Xi-D01">
-                                                    <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iay-Xi-D01">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FK6-ZY-kxj">
-                                                        <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-Yu-QGo">
-                                                                <rect key="frame" x="5" y="5" width="0.0" height="0.0"/>
+                                                                <rect key="frame" x="5" y="5" width="40" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="X3L-Yu-QGo" secondAttribute="height" id="jHD-KM-OCv"/>
                                                                 </constraints>
@@ -982,8 +893,8 @@
                                                         <blurEffect style="dark"/>
                                                     </vibrancyEffect>
                                                 </visualEffectView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-5s-XTa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="288" height="542"/>
+                                                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-5s-XTa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="288" height="472"/>
                                                     <subviews>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KRh-aT-0gZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="288" height="322"/>
@@ -1012,13 +923,13 @@
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yif-oJ-ziU">
-                                                            <rect key="frame" x="0.0" y="322" width="288" height="37"/>
+                                                            <rect key="frame" x="0.0" y="322" width="288" height="50"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sd7-g8-Nfx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="288" height="37"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-0s-3tn">
-                                                                        <rect key="frame" x="2" y="2" width="284" height="33"/>
+                                                                        <rect key="frame" x="2" y="2" width="284" height="46"/>
                                                                         <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="17"/>
                                                                         <state key="normal" title="Open Syllable"/>
                                                                         <connections>
@@ -1038,7 +949,7 @@
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9W1-Pv-US6">
-                                                            <rect key="frame" x="0.0" y="359" width="288" height="50"/>
+                                                            <rect key="frame" x="0.0" y="372" width="288" height="50"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="c16-Xt-hsu">
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1064,7 +975,7 @@
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KKB-ow-UOy">
-                                                            <rect key="frame" x="0.0" y="409" width="288" height="50"/>
+                                                            <rect key="frame" x="0.0" y="422" width="288" height="50"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qms-Wx-m2c">
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="50"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1091,8 +1002,8 @@
                                                                 <blurEffect style="dark"/>
                                                             </vibrancyEffect>
                                                         </visualEffectView>
-                                                        <visualEffectView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Bwx-nU-b53">
-                                                            <rect key="frame" x="0.0" y="459" width="288" height="83"/>
+                                                        <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Bwx-nU-b53">
+                                                            <rect key="frame" x="0.0" y="472" width="288" height="83"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="A9L-rJ-HtS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="288" height="83"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1113,7 +1024,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <vibrancyEffect>
-                                                                <blurEffect style="systemUltraThinMaterialDark"/>
+                                                                <blurEffect style="dark"/>
                                                             </vibrancyEffect>
                                                         </visualEffectView>
                                                     </subviews>
@@ -1134,9 +1045,176 @@
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScJ-Oc-YwF">
+                                <rect key="frame" x="245" y="493" width="67" height="67"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vmJ-z1-f6X">
+                                    <rect key="frame" x="0.0" y="0.0" width="67" height="67"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxS-dE-VtV">
+                                            <rect key="frame" x="8" y="8" width="51" height="51"/>
+                                            <subviews>
+                                                <scrollView hidden="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxN-QG-qWI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="51"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ec6-vg-0uC">
+                                                            <rect key="frame" x="0.0" y="0.0" width="352.5" height="42.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tme-Jm-dSa">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M4K-j7-Fu9"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRf-41-pSS">
+                                                                    <rect key="frame" x="51.5" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sd3-JE-rzW"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hq-kx-hSE">
+                                                                    <rect key="frame" x="103" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jfc-in-nNv"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-gW-JyL">
+                                                                    <rect key="frame" x="154.5" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lco-Xp-tMG"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmk-WV-MEL">
+                                                                    <rect key="frame" x="206" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CYQ-2Z-eGv"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoh-gd-50d">
+                                                                    <rect key="frame" x="257.5" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PT8-cA-CO1"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpT-CQ-Wtr">
+                                                                    <rect key="frame" x="309" y="0.0" width="43.5" height="42.5"/>
+                                                                    <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <state key="normal" image="circle.fill" catalog="system">
+                                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                        </preferredSymbolConfiguration>
+                                                                    </state>
+                                                                    <connections>
+                                                                        <action selector="changeTint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIM-iY-Gyw"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="352.5" id="R7S-hb-aMg"/>
+                                                                <constraint firstAttribute="height" constant="42.5" id="u7j-i6-QP9"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ec6-vg-0uC" firstAttribute="leading" secondItem="vOt-OO-S6T" secondAttribute="leading" id="dl7-09-FMd"/>
+                                                        <constraint firstItem="ec6-vg-0uC" firstAttribute="bottom" secondItem="vOt-OO-S6T" secondAttribute="bottom" id="hnv-ud-hqr"/>
+                                                        <constraint firstItem="ec6-vg-0uC" firstAttribute="top" secondItem="vOt-OO-S6T" secondAttribute="top" id="iLq-Eb-P3w"/>
+                                                        <constraint firstItem="ec6-vg-0uC" firstAttribute="height" secondItem="vOt-OO-S6T" secondAttribute="height" id="kUg-bM-I0g"/>
+                                                        <constraint firstAttribute="width" priority="750" constant="352.5" id="q41-cO-o4P"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="sEQ-t2-Lys"/>
+                                                        <constraint firstItem="ec6-vg-0uC" firstAttribute="trailing" secondItem="vOt-OO-S6T" secondAttribute="trailing" id="tqT-aG-vcF"/>
+                                                        <constraint firstItem="ec6-vg-0uC" firstAttribute="width" secondItem="vOt-OO-S6T" secondAttribute="width" id="yk5-3U-S27"/>
+                                                    </constraints>
+                                                    <viewLayoutGuide key="contentLayoutGuide" id="vOt-OO-S6T"/>
+                                                    <viewLayoutGuide key="frameLayoutGuide" id="dgA-jw-l0P"/>
+                                                </scrollView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pK8-4x-u9y">
+                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TCW-9U-vpm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPE-wx-tGi">
+                                                                <rect key="frame" x="5" y="5" width="41" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="qPE-wx-tGi" secondAttribute="height" id="gjs-iH-vhl"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                                <state key="normal" image="paintbrush.fill" catalog="system">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="expandColors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBa-55-P9g"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="qPE-wx-tGi" firstAttribute="centerY" secondItem="TCW-9U-vpm" secondAttribute="centerY" id="Cbe-qb-KP4"/>
+                                                            <constraint firstItem="qPE-wx-tGi" firstAttribute="centerX" secondItem="TCW-9U-vpm" secondAttribute="centerX" id="TZj-ZS-3l9"/>
+                                                            <constraint firstItem="qPE-wx-tGi" firstAttribute="height" secondItem="TCW-9U-vpm" secondAttribute="height" priority="999" constant="-10" id="VCU-E5-DFz"/>
+                                                            <constraint firstItem="qPE-wx-tGi" firstAttribute="width" secondItem="TCW-9U-vpm" secondAttribute="width" constant="-10" id="fqh-xh-hwr"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="dark"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="nxS-dE-VtV" secondAttribute="bottom" constant="8" id="WgC-hg-poX"/>
+                                        <constraint firstItem="nxS-dE-VtV" firstAttribute="top" secondItem="vmJ-z1-f6X" secondAttribute="top" constant="8" id="fWp-HJ-2Wb"/>
+                                        <constraint firstAttribute="trailing" secondItem="nxS-dE-VtV" secondAttribute="trailing" constant="8" id="otd-Ll-CIV"/>
+                                        <constraint firstItem="nxS-dE-VtV" firstAttribute="leading" secondItem="vmJ-z1-f6X" secondAttribute="leading" constant="8" id="xnd-6j-DWO"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="8GX-4f-J2h"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ScJ-Oc-YwF" secondAttribute="leading" constant="-8" id="3eR-nf-Ld9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ScJ-Oc-YwF" secondAttribute="bottom" constant="8" id="3fg-ef-g07"/>
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4ke-aV-1nS"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7kS-DH-wsS"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="width" secondItem="H1M-3y-yyQ" secondAttribute="width" id="Aa3-HN-NAa"/>
@@ -1150,30 +1228,37 @@
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bEP-Jk-BDq"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="height" secondItem="H1M-3y-yyQ" secondAttribute="height" id="eJe-dh-kqT"/>
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.67" priority="998" id="jLu-TS-RfH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ec6-vg-0uC" secondAttribute="trailing" constant="20" id="k5Z-lc-Lpr"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerY" secondItem="H1M-3y-yyQ" secondAttribute="centerY" id="mWr-2N-IPF"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerX" secondItem="H1M-3y-yyQ" secondAttribute="centerX" id="nhL-0M-LhS"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="pZO-pQ-MmU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ofv-r0-ftK" secondAttribute="trailing" constant="8" id="shK-JL-LN0"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="tfK-rq-VnS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ec6-vg-0uC" secondAttribute="bottom" constant="8" id="ucM-XE-CHM"/>
                             <constraint firstItem="Ofv-r0-ftK" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-2" id="wiJ-Zq-Fw7"/>
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" priority="999" id="yGi-k0-WHG"/>
+                            <constraint firstItem="ScJ-Oc-YwF" firstAttribute="trailing" secondItem="Ofv-r0-ftK" secondAttribute="trailing" id="zS6-he-ibq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="LcU-sX-yuB"/>
+                                <exclude reference="NgI-oe-asZ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="LcU-sX-yuB"/>
-                                <exclude reference="NgI-oe-asZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="NgI-oe-asZ"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="colorPickerContainer" destination="ScJ-Oc-YwF" id="E3i-FB-Juh"/>
+                        <outlet property="colorPickerIconContainer" destination="pK8-4x-u9y" id="MJz-Lo-91U"/>
+                        <outlet property="colorScrollView" destination="GxN-QG-qWI" id="IS4-5m-qXW"/>
                         <outlet property="deckEditStack" destination="2ft-5s-XTa" id="2Gy-ZF-y4B"/>
                         <outlet property="deckEditView" destination="Ofv-r0-ftK" id="z1T-Mi-oiG"/>
                         <outlet property="deckPickContainerView" destination="Bwx-nU-b53" id="IGf-PG-7Oy"/>
@@ -1185,6 +1270,9 @@
                         <outletCollection property="deckEditBtns" destination="b78-LB-PGK" collectionClass="NSMutableArray" id="OG6-76-gxS"/>
                         <outletCollection property="deckEditBtns" destination="dQc-0s-3tn" collectionClass="NSMutableArray" id="WUD-ez-mep"/>
                         <outletCollection property="deckEditBtns" destination="JlU-O6-RHT" collectionClass="NSMutableArray" id="RCr-fQ-Rp3"/>
+                        <outletCollection property="deckEditContainers" destination="KRh-aT-0gZ" collectionClass="NSMutableArray" id="nQg-cg-2Ea"/>
+                        <outletCollection property="deckEditContainers" destination="Yif-oJ-ziU" collectionClass="NSMutableArray" id="k9e-uj-5iJ"/>
+                        <outletCollection property="deckEditContainers" destination="9W1-Pv-US6" collectionClass="NSMutableArray" id="4mB-6l-pEe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -1196,6 +1284,7 @@
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
         <image name="defaultBackground" width="3375" height="2250"/>
+        <image name="paintbrush.fill" catalog="system" width="128" height="125"/>
         <image name="square.stack" catalog="system" width="113" height="128"/>
         <namedColor name="Dark Dim">
             <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

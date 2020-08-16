@@ -8,7 +8,9 @@
 import UIKit
 
 class BoardViewController: UIViewController, UIPickerViewDelegate {
-
+	var doubleReg: Bool {
+		traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular
+	}
     @IBOutlet var stacks: [CardStack]!
     var pack = LetterPack.standardOpen
     override func viewDidLoad() {
@@ -26,19 +28,26 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		updateDeckEditRadius(animationDuration: 0)
+		updateRadius(of: colorPickerContainer, basedOn: colorScrollView)
 	}
     @IBAction func changeTint(_ sender: UIButton) {
         view.tintColor = sender.tintColor
+		colorPickerIconContainer.stackViewHidden = false
+		colorScrollView.stackViewHidden = true
+		updateRadius(of: colorPickerContainer, basedOn: colorScrollView)
     }
     
 	@IBOutlet weak var deckEditView: UIVisualEffectView!
-	func updateDeckEditRadius(animationDuration: TimeInterval = 0.25) {
-		print(deckEditView.layer.cornerRadius)
-		let open = !deckEditStack.isHidden
+	func updateRadius(of view: UIView, basedOn stack: UIView, animationDuration: TimeInterval = 0.25) {
+		let open = !stack.isHidden
 		UIViewPropertyAnimator(duration: animationDuration, curve: .easeInOut) {
-			self.deckEditView.layer.cornerRadius = open ? 15 : self.deckEditView.bounds.height / 2
-			self.deckEditView.layer.cornerCurve = open ? .continuous : .circular
+			view.layer.cornerRadius = open ? 15 : view.bounds.height / 2
+			view.layer.cornerCurve = open ? .continuous : .circular
 		}.startAnimation()
+
+	}
+	func updateDeckEditRadius(animationDuration: TimeInterval = 0.25) {
+		updateRadius(of: deckEditView, basedOn: deckEditStack, animationDuration: animationDuration)
 	}
 	@IBOutlet weak var editDeckButtonView: UIVisualEffectView!
 	@IBOutlet weak var deckEditStack: UIStackView!
@@ -58,23 +67,34 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 	let positions: [LetterSet.Position] = [.beginning, .middle, .end]
 	var editingTag = 0
 	@IBOutlet var deckEditBtns: [UIButton]!
+	@IBOutlet var deckEditContainers: [UIVisualEffectView]!
 	@IBAction func pickDeck(_ sender: UIButton) {
 		deckEditStack.changeViewPosition(self.deckPickContainerView, to: sender.tag + 1)
-		deckPicker.setup(for: positions[sender.tag])
-		editingTag = sender.tag
-	}
-	func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-				guard let picker = pickerView as? DeckPicker, let name = picker.deckPickerSource?.letterSets[row].name else { return nil }
-		var font = UIFont.systemFont(ofSize: 5)
-		if let roundDescript = font.fontDescriptor.withDesign(.rounded) {
-			font = UIFont(descriptor: roundDescript, size: 5)
+//		if doubleReg {
+			for container in deckEditContainers {
+				container.stackViewHidden = false
+			}
+			deckEditContainers[sender.tag].stackViewHidden = true
+//		}
+		let pos = positions[sender.tag]
+		deckPicker.setup(for: pos)
+		let sets = LetterSet.sets(for: pos)
+		var index = 0
+		switch pos {
+		case .end:
+			index = sets.firstIndex(of: newPack.end) ?? 0
+		case .middle:
+			index = sets.firstIndex(of: newPack.middle) ?? 0
+		default:
+			index = sets.firstIndex(of: newPack.beginning) ?? 0
 		}
-		return NSAttributedString(string: name)//, attributes: [.foregroundColor: UIColor.white, .font: font])
+		deckPicker.selectRow(index, inComponent: 0, animated: false)
+		editingTag = sender.tag
 	}
 	func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
 		let lbl = view as? UILabel ?? UILabel()
 		func prepareLbl(_ lbl: UILabel) {
-			var font = UIFont.systemFont(ofSize: 17)
+			var font = UIFont.systemFont(ofSize: 17, weight: .semibold)
 			if let roundDescript = font.fontDescriptor.withDesign(.rounded) {
 				font = UIFont(descriptor: roundDescript, size: 17)
 			}
@@ -102,6 +122,15 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 			newPack.beginning = set
 		}
 	}
+	@IBOutlet weak var colorPickerContainer: UIVisualEffectView!
+	@IBOutlet weak var colorPickerIconContainer: UIVisualEffectView!
+	@IBOutlet weak var colorScrollView: UIScrollView!
+	@IBAction func expandColors(_ sender: Any) {
+		colorPickerIconContainer.stackViewHidden = true
+		colorScrollView.stackViewHidden = false
+		updateRadius(of: colorPickerContainer, basedOn: colorScrollView)
+	}
+	
 }
 extension UIView {
 	var stackViewHidden: Bool {

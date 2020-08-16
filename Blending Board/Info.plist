@@ -15,11 +15,23 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-Pro-Rounded-Black</string>
+		<string>SF-Pro-Rounded-Bold</string>
+		<string>SF-Pro-Rounded-Heavy</string>
+		<string>SF-Pro-Rounded-Light</string>
+		<string>SF-Pro-Rounded-Medium</string>
+		<string>SF-Pro-Rounded-Regular</string>
+		<string>SF-Pro-Rounded-Semibold</string>
+		<string>SF-Pro-Rounded-Thin</string>
+		<string>SF-Pro-Rounded-Ultralight</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -61,18 +73,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SF-Pro-Rounded-Black</string>
-		<string>SF-Pro-Rounded-Bold</string>
-		<string>SF-Pro-Rounded-Heavy</string>
-		<string>SF-Pro-Rounded-Light</string>
-		<string>SF-Pro-Rounded-Medium</string>
-		<string>SF-Pro-Rounded-Regular</string>
-		<string>SF-Pro-Rounded-Semibold</string>
-		<string>SF-Pro-Rounded-Thin</string>
-		<string>SF-Pro-Rounded-Ultralight</string>
 	</array>
 </dict>
 </plist>
