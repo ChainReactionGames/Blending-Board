@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942656925104FF100B73AB1 /* IntroViewController.swift */; };
 		8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA824B385DC0082A4AA /* SF-Pro-Rounded-Black.otf */; };
 		8305207124B3C48100256516 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAC24B385DC0082A4AA /* SF-Pro-Rounded-Bold.otf */; };
 		8305207224B3C48100256516 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAF24B385DD0082A4AA /* SF-Pro-Rounded-Heavy.otf */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5942656925104FF100B73AB1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		833195A124BCB05A00F02010 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8391DD6D24B376320082A4AA /* Blending Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blending Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8391DD7024B376320082A4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				8391DD7224B376320082A4AA /* SceneDelegate.swift */,
 				8391DD7424B376320082A4AA /* BoardViewController.swift */,
 				83B8007E24B3CD5B0082F71C /* LetterCard.swift */,
+				5942656925104FF100B73AB1 /* IntroViewController.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
 				833195A024BCB04B00F02010 /* Design */,
@@ -343,6 +346,7 @@
 				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
 				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,
 				8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */,
+				5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +524,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -544,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -12,6 +12,10 @@ struct LetterPack: Equatable {
     var beginning: LetterSet
     var middle: LetterSet
     var end: LetterSet
+	
+	var sets: [LetterSet] {
+		[beginning, middle, end]
+	}
 }
 extension LetterPack {
     init(name: String?, _ sets: [LetterSet]) {
