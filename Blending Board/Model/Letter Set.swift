@@ -48,7 +48,7 @@ extension LetterSet {
     static var vowelTeamAdvanced = LetterSet(name: "Vowel Team Advanced", position: .middle, letters: ["aw", "eigh", "ew", "ey", "ie", "oe", "oi", "oo", "ou", "ow"])
     static var vowelA = LetterSet(name: "Vowel A", position: .middle, letters: ["al", "all", "wa", "al", "all", "wa"])
     
-    static var allSets = [singleConsonantsBeginning, singleConsonantsEnding,  hBrothers, beginningBlends, shortVowelPointers, endingBlends, magicEEnding, closedSyllable, openSyllable, magicEMiddle, controlledR, shortVowelExceptions, vowelTeamBasic, vowelTeamIntermediate, vowelTeamAdvanced, vowelA, empty]
+    static var allSets = [singleConsonantsBeginning, singleConsonantsEnding,  hBrothers, beginningBlends, endingBlends, magicEEnding, closedSyllable, openSyllable, magicEMiddle, shortVowelPointers,  controlledR, shortVowelExceptions, vowelTeamBasic, vowelTeamIntermediate, vowelTeamAdvanced, vowelA, empty]
 	
 
     static var none = LetterSet(position: .all, letters: [])

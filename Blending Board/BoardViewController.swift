@@ -6,24 +6,40 @@
 //
 
 import UIKit
-
+extension Notification.Name {
+	static let packChosen = Notification.Name("Pack Chosen")
+}
 class BoardViewController: UIViewController, UIPickerViewDelegate {
 	var doubleReg: Bool {
 		traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular
 	}
     @IBOutlet var stacks: [CardStack]!
-    var pack = LetterPack.standardOpen
+	@IBOutlet weak var setupView: UIView!
+	var pack = LetterPack.standardOpen
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 		setupStacks()
 		deckPicker.delegate = self
+		NotificationCenter.default.addObserver(self, selector: #selector(packConfirmed(_:)), name: .packChosen, object: nil)
     }
+	@IBOutlet weak var cardStackView: UIStackView!
+	@objc func packConfirmed(_ notif: Notification) {
+		guard let pack = notif.object as? LetterPack else { return }
+		newPack = pack
+		setupStacks()
+		UIView.animate(withDuration: 0.25) { [self] in
+			cardStackView.alpha = 1
+		} completion: { [self] (_) in
+			setupView.isHidden = true
+		}
+	}
 	func setupStacks() {
 		pack = newPack
         stacks[0].setup(pack.beginning)
         stacks[1].setup(pack.middle)
         stacks[2].setup(pack.end)
+		updateDeckEditBtnsToCurrent()
 	}
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
@@ -120,6 +136,11 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 			newPack.end = set
 		default:
 			newPack.beginning = set
+		}
+	}
+	func updateDeckEditBtnsToCurrent() {
+		for i in 0 ..< deckEditBtns.count {
+			deckEditBtns[i].setTitle(newPack.sets[i].name, for: .normal)
 		}
 	}
 	@IBOutlet weak var colorPickerContainer: UIVisualEffectView!
