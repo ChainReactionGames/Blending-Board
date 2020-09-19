@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942656925104FF100B73AB1 /* IntroViewController.swift */; };
+		59E2DE29251563970045F02E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E2DE28251563970045F02E /* WidgetKit.framework */; platformFilter = ios; };
+		59E2DE2B251563970045F02E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E2DE2A251563970045F02E /* SwiftUI.framework */; };
+		59E2DE2E251563970045F02E /* Blending_Board_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2D251563970045F02E /* Blending_Board_Widget.swift */; };
+		59E2DE31251563990045F02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E2DE30251563990045F02E /* Assets.xcassets */; };
+		59E2DE33251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */; };
+		59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */; };
+		59E2DE37251563990045F02E /* Blending Board WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59E2DE4525156BD30045F02E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8008024B3D28D0082F71C /* Colors.xcassets */; };
+		59E2DE4B251583BF0045F02E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE4A251583BF0045F02E /* Settings.swift */; };
 		8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA824B385DC0082A4AA /* SF-Pro-Rounded-Black.otf */; };
 		8305207124B3C48100256516 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAC24B385DC0082A4AA /* SF-Pro-Rounded-Bold.otf */; };
 		8305207224B3C48100256516 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAF24B385DD0082A4AA /* SF-Pro-Rounded-Heavy.otf */; };
@@ -33,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		59E2DE35251563990045F02E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8391DD6524B376320082A4AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59E2DE25251563970045F02E;
+			remoteInfo = "Blending Board WidgetExtension";
+		};
 		8391DD8424B376330082A4AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8391DD6524B376320082A4AA /* Project object */;
@@ -49,8 +65,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		59E2DE39251563990045F02E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				59E2DE37251563990045F02E /* Blending Board WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5942656925104FF100B73AB1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blending Board WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E2DE28251563970045F02E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		59E2DE2A251563970045F02E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		59E2DE2D251563970045F02E /* Blending_Board_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blending_Board_Widget.swift; sourceTree = "<group>"; };
+		59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Blending_Board_Widget.intentdefinition; sourceTree = "<group>"; };
+		59E2DE30251563990045F02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59E2DE32251563990045F02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E2DE38251563990045F02E /* Blending Board WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Blending Board WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		59E2DE4A251583BF0045F02E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		833195A124BCB05A00F02010 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8391DD6D24B376320082A4AA /* Blending Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blending Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8391DD7024B376320082A4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +122,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		59E2DE23251563970045F02E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E2DE2B251563970045F02E /* SwiftUI.framework in Frameworks */,
+				59E2DE29251563970045F02E /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8391DD6A24B376320082A4AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,6 +155,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59E2DE27251563970045F02E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59E2DE28251563970045F02E /* WidgetKit.framework */,
+				59E2DE2A251563970045F02E /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E2DE2C251563970045F02E /* Blending Board Widget */ = {
+			isa = PBXGroup;
+			children = (
+				59E2DE2D251563970045F02E /* Blending_Board_Widget.swift */,
+				59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */,
+				59E2DE30251563990045F02E /* Assets.xcassets */,
+				59E2DE32251563990045F02E /* Info.plist */,
+			);
+			path = "Blending Board Widget";
+			sourceTree = "<group>";
+		};
 		833195A024BCB04B00F02010 /* Design */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,9 +186,12 @@
 		8391DD6424B376320082A4AA = {
 			isa = PBXGroup;
 			children = (
+				59E2DE38251563990045F02E /* Blending Board WidgetExtension.entitlements */,
 				8391DD6F24B376320082A4AA /* Blending Board */,
 				8391DD8624B376330082A4AA /* Blending BoardTests */,
 				8391DD9124B376330082A4AA /* Blending BoardUITests */,
+				59E2DE2C251563970045F02E /* Blending Board Widget */,
+				59E2DE27251563970045F02E /* Frameworks */,
 				8391DD6E24B376320082A4AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +202,7 @@
 				8391DD6D24B376320082A4AA /* Blending Board.app */,
 				8391DD8324B376330082A4AA /* Blending BoardTests.xctest */,
 				8391DD8E24B376330082A4AA /* Blending BoardUITests.xctest */,
+				59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +216,7 @@
 				8391DD7424B376320082A4AA /* BoardViewController.swift */,
 				83B8007E24B3CD5B0082F71C /* LetterCard.swift */,
 				5942656925104FF100B73AB1 /* IntroViewController.swift */,
+				59E2DE4A251583BF0045F02E /* Settings.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
 				833195A024BCB04B00F02010 /* Design */,
@@ -202,6 +275,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		59E2DE25251563970045F02E /* Blending Board WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E2DE3C251563990045F02E /* Build configuration list for PBXNativeTarget "Blending Board WidgetExtension" */;
+			buildPhases = (
+				59E2DE22251563970045F02E /* Sources */,
+				59E2DE23251563970045F02E /* Frameworks */,
+				59E2DE24251563970045F02E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blending Board WidgetExtension";
+			productName = "Blending Board WidgetExtension";
+			productReference = 59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8391DD6C24B376320082A4AA /* Blending Board */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8391DD9724B376330082A4AA /* Build configuration list for PBXNativeTarget "Blending Board" */;
@@ -209,10 +299,12 @@
 				8391DD6924B376320082A4AA /* Sources */,
 				8391DD6A24B376320082A4AA /* Frameworks */,
 				8391DD6B24B376320082A4AA /* Resources */,
+				59E2DE39251563990045F02E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				59E2DE36251563990045F02E /* PBXTargetDependency */,
 			);
 			name = "Blending Board";
 			productName = "Blending Board";
@@ -264,6 +356,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					59E2DE25251563970045F02E = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					8391DD6C24B376320082A4AA = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -293,11 +388,21 @@
 				8391DD6C24B376320082A4AA /* Blending Board */,
 				8391DD8224B376330082A4AA /* Blending BoardTests */,
 				8391DD8D24B376330082A4AA /* Blending BoardUITests */,
+				59E2DE25251563970045F02E /* Blending Board WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		59E2DE24251563970045F02E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E2DE31251563990045F02E /* Assets.xcassets in Resources */,
+				59E2DE4525156BD30045F02E /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8391DD6B24B376320082A4AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +440,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		59E2DE22251563970045F02E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E2DE33251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */,
+				59E2DE2E251563970045F02E /* Blending_Board_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8391DD6924B376320082A4AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,7 +457,9 @@
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
 				833195A224BCB05A00F02010 /* Colors.swift in Sources */,
+				59E2DE4B251583BF0045F02E /* Settings.swift in Sources */,
 				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
+				59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */,
 				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,
 				8391DDA524B383C10082A4AA /* Letter Pack.swift in Sources */,
 				5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */,
@@ -369,6 +485,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		59E2DE36251563990045F02E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59E2DE25251563970045F02E /* Blending Board WidgetExtension */;
+			targetProxy = 59E2DE35251563990045F02E /* PBXContainerItemProxy */;
+		};
 		8391DD8524B376330082A4AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8391DD6C24B376320082A4AA /* Blending Board */;
@@ -401,6 +522,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		59E2DE3A251563990045F02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Blending Board WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59E2DE3B251563990045F02E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Blending Board WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8391DD9524B376330082A4AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -520,11 +689,12 @@
 		8391DD9824B376330082A4AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -544,11 +714,12 @@
 		8391DD9924B376330082A4AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -654,6 +825,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		59E2DE3C251563990045F02E /* Build configuration list for PBXNativeTarget "Blending Board WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E2DE3A251563990045F02E /* Debug */,
+				59E2DE3B251563990045F02E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8391DD6824B376320082A4AA /* Build configuration list for PBXProject "Blending Board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

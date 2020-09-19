@@ -69,7 +69,11 @@ class LetterCard: UIView {
         }
     }
     var textColor: UIColor {
-        self.letter.isVowel ? tintColor : Colors.text
+		let returningColor: UIColor = self.letter.isVowel ? tintColor : Colors.text
+		if returningColor == UIColor.systemYellow {
+			return .systemOrange
+		}
+		return returningColor
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
