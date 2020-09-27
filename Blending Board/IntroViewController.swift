@@ -54,6 +54,8 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		for collView in collectionViews {
 			collView.collectionViewLayout = generateLayout()
 		}
+		NotificationCenter.default.addObserver(self, selector: #selector(editStackBtnPressed(_:)), name: .init("Edit Letter Set"), object: nil)
+
     }
 	@IBOutlet var collectionViews: [UICollectionView]!
 	func generateLayout() -> UICollectionViewLayout {
@@ -72,28 +74,27 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 			_ = blur.subviews.map({ $0.alpha = 0 })
 		}
 	}
-	
-	@IBAction func editStackBtn(_ sender: UIButton) {
-		if let cell = sender.superview?.superview as? LetterSetCollectionViewCell {
-			letterSetEditor.baseSet = cell.letterSet
-			letterSetEditor.letterSet = cell.letterSet
-			_ = letterSetEditor.subviews.compactMap({ $0 as? UICollectionView }).map({ $0.reloadData() })
-			letterSetEditorView.transform = CGAffineTransform(translationX: letterSetEditor.bounds.width, y: 0)
-			letterSetEditorView.isHidden = false
-			UIView.animate(withDuration: 0.25) { [self] in
-				letterSetEditorView.transform = .identity
-				for coll in setCollectionViews {
-					coll.stackViewHidden = (coll.tag) != cell.column
-				}
-				for item in columnStack.arrangedSubviews {
-					print(item.tag, cell.column)
-					item.stackViewHidden = (item.tag - 1) != cell.column
-				}
-				letterSetEditorConstraint.isActive = true
-				view.layoutIfNeeded()
-			}
-			editingColumn = cell.column
+	@objc func editStackBtnPressed(_ notification: Notification) {
+		guard let cell = notification.object as? LetterSetCollectionViewCell else { return }
+		letterSetEditor.baseSet = cell.letterSet
+		letterSetEditor.letterSet = cell.letterSet
+		_ = letterSetEditor.subviews.compactMap({ $0 as? UICollectionView }).map({ $0.reloadData() })
+		letterSetEditorView.transform = CGAffineTransform(translationX: letterSetEditor.bounds.width, y: 0)
+		letterSetEditorView.isHidden = false
+		UIView.animate(withDuration: 0.25) { [self] in
+			letterSetEditorView.transform = .identity
+			if setCollectionViews.isEmpty { return }
+			letterSetEditorConstraint.isActive = true
+			view.layoutIfNeeded()
 		}
+		for coll in setCollectionViews {
+			coll.stackViewHidden = (coll.tag) != cell.column
+		}
+		for item in columnStack.arrangedSubviews {
+			print(item.tag, cell.column)
+			item.stackViewHidden = (item.tag - 1) != cell.column
+		}
+		editingColumn = cell.column
 	}
 	@IBOutlet weak var letterSetEditorView: UIVisualEffectView!
 	@IBOutlet weak var letterSetEditor: LetterSetEditor!
@@ -139,6 +140,9 @@ class LetterSetCollectionViewCell: UICollectionViewCell {
 				selectionIndicator.alpha = newValue ? 0.3 : 0
 			}
 		}
+	}
+	@IBAction func editLetterSet(_ sender: Any) {
+		NotificationCenter.default.post(name: .init("Edit Letter Set"), object: self)
 	}
 }
 class LetterSetEditor: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
@@ -190,6 +194,20 @@ class LetterSetEditor: UIView, UICollectionViewDelegate, UICollectionViewDataSou
 		}
 		return false
 	}
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		(subviews.compactMap({$0 as? UICollectionView}).first)?.collectionViewLayout = generateLayout()
+	}
+	func generateLayout() -> UICollectionViewLayout {
+		let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .absolute(74), heightDimension: .absolute(74)))
+		let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(80)), subitems: [item])
+		group.interItemSpacing = .fixed(16)
+	  let section = NSCollectionLayoutSection(group: group)
+		section.interGroupSpacing = 16
+	  let layout = UICollectionViewCompositionalLayout(section: section)
+	  return layout
+	}
+
 }
 class LetterCell: UICollectionViewCell {
 	@IBOutlet weak var field: UITextField!

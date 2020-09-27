@@ -22,6 +22,7 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		setupStacks()
 		deckPicker.delegate = self
 		NotificationCenter.default.addObserver(self, selector: #selector(packConfirmed(_:)), name: .packChosen, object: nil)
+		cardStackView.tintColor = .systemYellow
     }
 	@IBOutlet weak var cardStackView: UIStackView!
 	@objc func packConfirmed(_ notif: Notification) {

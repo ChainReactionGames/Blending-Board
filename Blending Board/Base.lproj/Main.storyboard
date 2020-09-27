@@ -1297,10 +1297,10 @@
             </objects>
             <point key="canvasLocation" x="-761" y="79"/>
         </scene>
-        <!--Board View Controller-->
+        <!--View Controller-->
         <scene sceneID="pJP-Ff-3gN">
             <objects>
-                <viewController id="N66-iB-l6e" customClass="BoardViewController" customModule="Blending_Board" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N66-iB-l6e" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PbG-Ze-6uK">
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1636,7 +1636,7 @@
                                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="bold"/>
                                                                                 </state>
                                                                                 <connections>
-                                                                                    <action selector="editStackBtn:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="m6h-sD-mH8"/>
+                                                                                    <action selector="editLetterSet:" destination="Bm6-av-uzJ" eventType="touchUpInside" id="Ljo-t1-bgq"/>
                                                                                 </connections>
                                                                             </button>
                                                                         </subviews>
@@ -1709,7 +1709,7 @@
                                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="bold"/>
                                                                                 </state>
                                                                                 <connections>
-                                                                                    <action selector="editStackBtn:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="HUv-5X-G9k"/>
+                                                                                    <action selector="editLetterSet:" destination="4kA-nR-f3J" eventType="touchUpInside" id="CNt-kk-Akr"/>
                                                                                 </connections>
                                                                             </button>
                                                                         </subviews>
@@ -1782,7 +1782,7 @@
                                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="bold"/>
                                                                                 </state>
                                                                                 <connections>
-                                                                                    <action selector="editStackBtn:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="zHq-Fz-nhi"/>
+                                                                                    <action selector="editLetterSet:" destination="m0t-cO-0Zi" eventType="touchUpInside" id="bnZ-Wo-iJi"/>
                                                                                 </connections>
                                                                             </button>
                                                                         </subviews>
@@ -1935,6 +1935,10 @@
                                                                                 <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPM-Q8-ZhK">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
                                                                                     <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="height" constant="74" id="QNp-M5-VVW"/>
+                                                                                        <constraint firstAttribute="width" constant="74" id="igJ-DQ-OT1"/>
+                                                                                    </constraints>
                                                                                 </view>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" minimumScaleFactor="0.29999999999999999" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ALK-es-FMc">
                                                                                     <rect key="frame" x="25.5" y="16" width="23" height="42"/>
@@ -1956,13 +1960,11 @@
                                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <constraints>
                                                                                 <constraint firstItem="jfq-YN-LmH" firstAttribute="centerY" secondItem="tl9-sg-0mz" secondAttribute="centerY" id="0TK-7a-BmP"/>
-                                                                                <constraint firstAttribute="height" constant="74" id="1FS-SW-YC1"/>
                                                                                 <constraint firstItem="ALK-es-FMc" firstAttribute="centerY" secondItem="tl9-sg-0mz" secondAttribute="centerY" id="6mj-dR-Zt3"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="T9N-rE-uVM" secondAttribute="trailing" constant="5" id="Hhx-Gz-W2f"/>
                                                                                 <constraint firstItem="ALK-es-FMc" firstAttribute="width" relation="lessThanOrEqual" secondItem="tl9-sg-0mz" secondAttribute="width" constant="-15" id="Ir1-Hk-bD5"/>
                                                                                 <constraint firstItem="gPM-Q8-ZhK" firstAttribute="centerX" secondItem="tl9-sg-0mz" secondAttribute="centerX" id="MhE-2i-s4L"/>
                                                                                 <constraint firstItem="gPM-Q8-ZhK" firstAttribute="width" secondItem="tl9-sg-0mz" secondAttribute="width" id="WVL-WZ-c87"/>
-                                                                                <constraint firstAttribute="width" constant="74" id="amh-lu-v4K"/>
                                                                                 <constraint firstItem="T9N-rE-uVM" firstAttribute="top" secondItem="tl9-sg-0mz" secondAttribute="top" constant="5" id="bFw-sR-n4N"/>
                                                                                 <constraint firstItem="ALK-es-FMc" firstAttribute="centerX" secondItem="tl9-sg-0mz" secondAttribute="centerX" id="bo6-wH-qeQ"/>
                                                                                 <constraint firstItem="jfq-YN-LmH" firstAttribute="width" secondItem="tl9-sg-0mz" secondAttribute="width" constant="-15" id="cTc-5u-2K6"/>
@@ -1971,12 +1973,6 @@
                                                                                 <constraint firstItem="jfq-YN-LmH" firstAttribute="centerX" secondItem="tl9-sg-0mz" secondAttribute="centerX" id="vln-zM-mce"/>
                                                                             </constraints>
                                                                         </view>
-                                                                        <constraints>
-                                                                            <constraint firstItem="tl9-sg-0mz" firstAttribute="top" secondItem="Zf2-ij-42j" secondAttribute="top" id="Znh-YF-OXG"/>
-                                                                            <constraint firstAttribute="bottom" secondItem="tl9-sg-0mz" secondAttribute="bottom" id="b4P-1m-bfs"/>
-                                                                            <constraint firstItem="tl9-sg-0mz" firstAttribute="leading" secondItem="Zf2-ij-42j" secondAttribute="leading" id="cIH-LM-4iA"/>
-                                                                            <constraint firstAttribute="trailing" secondItem="tl9-sg-0mz" secondAttribute="trailing" id="xA6-8v-iUx"/>
-                                                                        </constraints>
                                                                         <vibrancyEffect style="separator">
                                                                             <blurEffect style="dark"/>
                                                                         </vibrancyEffect>
@@ -1988,14 +1984,14 @@
                                                                     </visualEffectView>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="Zf2-ij-42j" firstAttribute="centerY" secondItem="Ttf-nt-WWp" secondAttribute="centerY" id="BtW-mW-DBm"/>
                                                                     <constraint firstItem="Ttf-nt-WWp" firstAttribute="width" secondItem="GCz-MZ-GID" secondAttribute="width" id="Cg6-hg-PQo"/>
-                                                                    <constraint firstItem="Zf2-ij-42j" firstAttribute="width" secondItem="Ttf-nt-WWp" secondAttribute="width" id="EIx-K4-nRZ"/>
                                                                     <constraint firstItem="Ttf-nt-WWp" firstAttribute="centerY" secondItem="GCz-MZ-GID" secondAttribute="centerY" id="HB7-88-hYV"/>
+                                                                    <constraint firstAttribute="width" secondItem="Zf2-ij-42j" secondAttribute="width" id="SVK-OV-7ge"/>
                                                                     <constraint firstItem="Ttf-nt-WWp" firstAttribute="centerX" secondItem="GCz-MZ-GID" secondAttribute="centerX" id="Xb4-33-llD"/>
-                                                                    <constraint firstItem="Zf2-ij-42j" firstAttribute="centerX" secondItem="Ttf-nt-WWp" secondAttribute="centerX" id="kDt-Ny-Agi"/>
+                                                                    <constraint firstAttribute="height" secondItem="Zf2-ij-42j" secondAttribute="height" id="gip-Qi-2bj"/>
                                                                     <constraint firstItem="Ttf-nt-WWp" firstAttribute="height" secondItem="GCz-MZ-GID" secondAttribute="height" id="lbq-cb-xlx"/>
-                                                                    <constraint firstItem="Zf2-ij-42j" firstAttribute="height" secondItem="Ttf-nt-WWp" secondAttribute="height" id="yzd-2M-IUK"/>
+                                                                    <constraint firstItem="Zf2-ij-42j" firstAttribute="centerY" secondItem="GCz-MZ-GID" secondAttribute="centerY" id="ltD-Gh-RIz"/>
+                                                                    <constraint firstItem="Zf2-ij-42j" firstAttribute="centerX" secondItem="GCz-MZ-GID" secondAttribute="centerX" id="mA4-Xp-d1a"/>
                                                                 </constraints>
                                                             </collectionViewCellContentView>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
