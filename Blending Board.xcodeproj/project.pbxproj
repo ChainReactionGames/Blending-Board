@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942656925104FF100B73AB1 /* IntroViewController.swift */; };
+		59C87B36252398AC004A46FC /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C87B35252398AC004A46FC /* Haptic.swift */; };
 		59E2DE29251563970045F02E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E2DE28251563970045F02E /* WidgetKit.framework */; platformFilter = ios; };
 		59E2DE2B251563970045F02E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E2DE2A251563970045F02E /* SwiftUI.framework */; };
 		59E2DE2E251563970045F02E /* Blending_Board_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2D251563970045F02E /* Blending_Board_Widget.swift */; };
@@ -81,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		5942656925104FF100B73AB1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		59C87B35252398AC004A46FC /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blending Board WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E2DE28251563970045F02E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		59E2DE2A251563970045F02E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -216,6 +218,7 @@
 				8391DD7424B376320082A4AA /* BoardViewController.swift */,
 				83B8007E24B3CD5B0082F71C /* LetterCard.swift */,
 				5942656925104FF100B73AB1 /* IntroViewController.swift */,
+				59C87B35252398AC004A46FC /* Haptic.swift */,
 				59E2DE4A251583BF0045F02E /* Settings.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
@@ -457,6 +460,7 @@
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
 				833195A224BCB05A00F02010 /* Colors.swift in Sources */,
+				59C87B36252398AC004A46FC /* Haptic.swift in Sources */,
 				59E2DE4B251583BF0045F02E /* Settings.swift in Sources */,
 				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
 				59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */,

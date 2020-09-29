@@ -6,8 +6,8 @@
 //
 
 import Foundation
-struct LetterSet: Equatable {
-    struct Position: OptionSet {
+struct LetterSet: Equatable, Codable {
+    struct Position: OptionSet, Codable {
         let rawValue: Int
         static let beginning = Position(rawValue: 1 << 0)
         static let middle = Position(rawValue: 1 << 1)

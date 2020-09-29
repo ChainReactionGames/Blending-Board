@@ -10,6 +10,24 @@ import UIKit
 class IntroViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 	@IBOutlet weak var mainView: UIView!
 	@IBOutlet weak var setCreationView: UIView!
+	@IBOutlet weak var myDecksView: MyDecksView!
+	@IBAction func myDecks(_ sender: Any) {
+		let width = self.view.bounds.width
+		self.myDecksView.transform = CGAffineTransform(translationX: width, y: 0)
+		UIView.animateKeyframes(withDuration: 1, delay: 0, options: [.calculationModeCubic], animations: {
+			UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 2/3) {
+				self.mainView.transform = CGAffineTransform(translationX: -width, y: 0)
+			}
+			UIView.addKeyframe(withRelativeStartTime: 1/3, relativeDuration: 1/3) {
+				self.mainView.alpha = 0
+			}
+			UIView.addKeyframe(withRelativeStartTime: 1/3, relativeDuration: 2/3) {
+				self.myDecksView.alpha = 1
+				self.myDecksView.transform = .identity
+			}
+		}, completion: nil)
+		myDecksView.blur = blur
+	}
 	@IBAction func createDeck(_ sender: Any) {
 		let width = self.view.bounds.width
 		self.setCreationView.transform = CGAffineTransform(translationX: -width, y: 0)
@@ -81,8 +99,26 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		}
 
 	}
-	@IBAction func confirmDeck(_ sender: Any) {
-		NotificationCenter.default.post(name: .packChosen, object: LetterPack(name: "Custom Pack", beginning: selectedSets[0], middle: selectedSets[1], end: selectedSets[2]))
+	@IBOutlet weak var deckNameField: UITextField!
+	@IBAction func confirmDeck(_ sender: UIButton) {
+		var pack = LetterPack(name: nil, selectedSets)
+		func deny() -> Bool {
+			if sender.tag != 1 { return false }
+			if let name = deckNameField.text, name.replacingOccurrences(of: " ", with: "") != "" {
+				pack.name = name
+				LetterPack.allPacks.insert(pack, at: 0)
+				return false
+			}
+			return true
+		}
+		if deny() {
+			Haptic.feedback(.failure)
+			deckNameField.jiggle()
+			return
+		}
+		Haptic.feedback(.success)
+		deckNameField.endEditing(true)
+		NotificationCenter.default.post(name: .packChosen, object: pack)
 		UIView.animate(withDuration: 0.25) { [self] in
 			blur.effect = nil
 			_ = blur.subviews.map({ $0.alpha = 0 })
@@ -277,5 +313,78 @@ extension Array where Element: Hashable {
 
 	mutating func removeDuplicates() {
 		self = self.removingDuplicates()
+	}
+}
+class MyDecksView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+	var blur: UIVisualEffectView?
+	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+		LetterPack.allPacks.count
+	}
+	
+	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "deckCell", for: indexPath) as? DeckCell else { return UICollectionViewCell() }
+		cell.deck = LetterPack.allPacks[indexPath.row]
+		return cell
+	}
+	
+	override func layoutSubviews() {
+		super.layoutSubviews()
+		(subviews.compactMap({$0 as? UICollectionView}).first)?.collectionViewLayout = generateLayout()
+	}
+	func generateLayout() -> UICollectionViewLayout {
+		let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1/3), heightDimension: .estimated(50)))
+		let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50)), subitems: [item])
+		group.interItemSpacing = .fixed(16)
+	  let section = NSCollectionLayoutSection(group: group)
+		section.interGroupSpacing = 16
+	  let layout = UICollectionViewCompositionalLayout(section: section)
+	  return layout
+	}
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		guard let cell = collectionView.cellForItem(at: indexPath) as? DeckCell else { return }
+		Haptic.feedback(.success)
+		NotificationCenter.default.post(name: .packChosen, object: cell.deck)
+		UIView.animate(withDuration: 0.25) { [self] in
+			blur?.effect = nil
+			_ = blur?.subviews.map({ $0.alpha = 0 })
+		}
+	}
+
+}
+class DeckCell: UICollectionViewCell {
+	@IBOutlet weak var label: UILabel!
+	@IBOutlet weak var editBtn: UIButton!
+	@IBOutlet weak var selectionIndicator: UIView?
+	var deck: LetterPack = .standardClosed {
+		willSet {
+			label.text = newValue.name
+		}
+	}
+//	var currentlySelected: Bool = false {
+//		willSet {
+//			UIView.animate(withDuration: 0.25) { [self] in
+//				editBtn.alpha = newValue ? 1 : 0
+//				selectionIndicator?.alpha = newValue ? 0.3 : 0
+//			}
+//		}
+//	}
+	required init?(coder: NSCoder) {
+		super.init(coder: coder)
+		setup()
+	}
+	override init(frame: CGRect) {
+		super.init(frame: frame)
+		setup()
+	}
+	func setup() {
+		let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+		swipe.direction = .left
+		self.addGestureRecognizer(swipe)
+	}
+	@IBOutlet weak var trashView: UIVisualEffectView!
+	@objc func swiped() {
+		trashView.stackViewHidden.toggle()
+	}
+	@IBAction func editLetterSet(_ sender: Any) {
 	}
 }

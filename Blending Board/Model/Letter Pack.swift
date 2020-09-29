@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LetterPack: Equatable {
+struct LetterPack: Equatable, Codable {
     var name: String?
     var beginning: LetterSet
     var middle: LetterSet
@@ -17,7 +17,20 @@ struct LetterPack: Equatable {
 		[beginning, middle, end]
 	}
 }
-extension LetterPack {
+extension LetterPack: Saving {
+	static var key: String = "Saved Decks"
+	static var information: [LetterPack] {
+		get {
+			allPacks
+		}
+		set {
+			allPacks = newValue
+		}
+	}
+	
+	typealias DataType = [LetterPack]
+	
+	
     init(name: String?, _ sets: [LetterSet]) {
         let standardizedArray = sets + Array(repeating: LetterSet.none, count: 3 - sets.count)
         self = LetterPack(name: name, beginning: standardizedArray[0], middle: standardizedArray[1], end: standardizedArray[2])
@@ -27,6 +40,12 @@ extension LetterPack {
     
     static var standardClosed = LetterPack(name: "Standard (Closed Syllable)", [.singleConsonantsBeginning, .closedSyllable, .singleConsonantsEnding])
     static var standardOpen = LetterPack(name: "Standard (Open Syllable)", [.singleConsonantsBeginning, .openSyllable, .singleConsonantsEnding])
-    
-    static var allPacks = [standardClosed, standardOpen]
+	
+    static let defaultPacks = [standardClosed, standardOpen]
+	static var allPacks = defaultPacks {
+		willSet {
+			save()
+		}
+	}
+
 }
