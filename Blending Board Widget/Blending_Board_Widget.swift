@@ -4,7 +4,7 @@
 //
 //  Created by Gary Gogis on 9/18/20.
 //
-
+#if !targetEnvironment(macCatalyst)
 import WidgetKit
 import SwiftUI
 import Intents
@@ -121,3 +121,4 @@ struct Blending_Board_Widget_Previews: PreviewProvider {
 		}
     }
 }
+#endif

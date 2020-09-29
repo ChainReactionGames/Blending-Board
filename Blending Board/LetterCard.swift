@@ -71,7 +71,7 @@ class LetterCard: UIView {
     var textColor: UIColor {
 		let returningColor: UIColor = self.letter.isVowel ? tintColor : Colors.text
 		if returningColor == UIColor.systemYellow {
-			return .systemOrange
+			return Colors.text
 		}
 		return returningColor
     }

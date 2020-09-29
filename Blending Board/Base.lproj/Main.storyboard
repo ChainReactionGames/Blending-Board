@@ -1587,7 +1587,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="black"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="confirmDeck:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="ph6-Ra-nLn"/>
+                                                                    <action selector="finishDeck:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="gI3-wm-SR0"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -1841,6 +1841,90 @@
                                                 <constraint firstItem="Fbc-eH-w4G" firstAttribute="centerX" secondItem="ZkH-LE-fFc" secondAttribute="centerX" id="yWl-cY-yyo"/>
                                             </constraints>
                                         </view>
+                                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IZ-Mm-P2U">
+                                            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cT0-Mv-Puw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hMm-6L-bqX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save Your Deck?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW4-Mb-cIT">
+                                                                <rect key="frame" x="157.5" y="14.5" width="253.5" height="42"/>
+                                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="35"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9YG-HS-e6G">
+                                                                <rect key="frame" x="195" y="133" width="178" height="35"/>
+                                                                <fontDescription key="fontDescription" name="SFProRounded-Medium" family="SF Pro Rounded" pointSize="19"/>
+                                                                <state key="normal" title="Skip, Don't Save Deck"/>
+                                                                <connections>
+                                                                    <action selector="confirmDeck:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="i17-Hy-luY"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbj-Kx-hmr">
+                                                                <rect key="frame" x="407.5" y="71" width="50" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="50" id="Hkr-ME-tjO"/>
+                                                                    <constraint firstAttribute="width" secondItem="tbj-Kx-hmr" secondAttribute="height" id="pWb-0a-cnz"/>
+                                                                </constraints>
+                                                                <state key="normal" image="checkmark.circle.fill" catalog="system">
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="black"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="confirmDeck:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="spE-Wh-qyF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="tbj-Kx-hmr" firstAttribute="width" secondItem="tbj-Kx-hmr" secondAttribute="height" id="W5d-6a-3Xe"/>
+                                                            <constraint firstItem="iW4-Mb-cIT" firstAttribute="centerX" secondItem="hMm-6L-bqX" secondAttribute="centerX" id="ZOp-B7-2Bg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="dark"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92Q-N5-HXQ">
+                                                    <rect key="frame" x="170.5" y="70.5" width="227" height="51"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Deck Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RRv-CN-qA5">
+                                                            <rect key="frame" x="10" y="8" width="207" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="rfZ-pH-P3Q"/>
+                                                            </constraints>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="30"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.15405722776073619" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="RRv-CN-qA5" firstAttribute="centerX" secondItem="92Q-N5-HXQ" secondAttribute="centerX" id="3nP-pU-Tg9"/>
+                                                        <constraint firstItem="RRv-CN-qA5" firstAttribute="centerY" secondItem="92Q-N5-HXQ" secondAttribute="centerY" id="DeO-hR-jR2"/>
+                                                        <constraint firstAttribute="trailing" secondItem="RRv-CN-qA5" secondAttribute="trailing" constant="10" id="IKb-f5-Mw9"/>
+                                                        <constraint firstItem="RRv-CN-qA5" firstAttribute="top" secondItem="92Q-N5-HXQ" secondAttribute="top" constant="8" id="KVH-OI-QK0"/>
+                                                        <constraint firstItem="RRv-CN-qA5" firstAttribute="leading" secondItem="92Q-N5-HXQ" secondAttribute="leading" constant="10" id="pdd-PF-eq0"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="9YG-HS-e6G" firstAttribute="centerX" secondItem="92Q-N5-HXQ" secondAttribute="centerX" id="0G7-3j-2Wr"/>
+                                                <constraint firstItem="tbj-Kx-hmr" firstAttribute="centerY" secondItem="92Q-N5-HXQ" secondAttribute="centerY" id="103-Do-0HE"/>
+                                                <constraint firstItem="cT0-Mv-Puw" firstAttribute="width" secondItem="2IZ-Mm-P2U" secondAttribute="width" id="9DJ-Mn-g81"/>
+                                                <constraint firstItem="cT0-Mv-Puw" firstAttribute="centerY" secondItem="2IZ-Mm-P2U" secondAttribute="centerY" id="Eft-uJ-xRA"/>
+                                                <constraint firstItem="cT0-Mv-Puw" firstAttribute="height" secondItem="2IZ-Mm-P2U" secondAttribute="height" id="R6K-hB-Y1F"/>
+                                                <constraint firstItem="92Q-N5-HXQ" firstAttribute="centerY" secondItem="2IZ-Mm-P2U" secondAttribute="centerY" multiplier="0.6" id="d6V-Az-MfH"/>
+                                                <constraint firstItem="cT0-Mv-Puw" firstAttribute="centerX" secondItem="2IZ-Mm-P2U" secondAttribute="centerX" id="dH4-lS-803"/>
+                                                <constraint firstItem="92Q-N5-HXQ" firstAttribute="centerX" secondItem="2IZ-Mm-P2U" secondAttribute="centerX" id="g31-Qp-Ku0"/>
+                                                <constraint firstItem="92Q-N5-HXQ" firstAttribute="width" relation="greaterThanOrEqual" secondItem="2IZ-Mm-P2U" secondAttribute="width" multiplier="2/5" id="nYq-q1-XNg"/>
+                                                <constraint firstItem="tbj-Kx-hmr" firstAttribute="leading" secondItem="92Q-N5-HXQ" secondAttribute="trailing" constant="10" id="v97-TI-68d"/>
+                                                <constraint firstItem="9YG-HS-e6G" firstAttribute="top" secondItem="92Q-N5-HXQ" secondAttribute="bottom" constant="11.5" id="ydw-Dw-aHg"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="ZkH-LE-fFc" firstAttribute="height" secondItem="5L3-AF-0rb" secondAttribute="height" id="0ms-fV-9E0"/>
@@ -1850,7 +1934,11 @@
                                         <constraint firstItem="ZkH-LE-fFc" firstAttribute="width" secondItem="5L3-AF-0rb" secondAttribute="width" id="WKL-Ih-k40"/>
                                         <constraint firstItem="FVc-wp-h1a" firstAttribute="width" secondItem="5L3-AF-0rb" secondAttribute="width" id="Yjk-of-KKo"/>
                                         <constraint firstItem="FVc-wp-h1a" firstAttribute="height" secondItem="5L3-AF-0rb" secondAttribute="height" id="ehM-s4-eLT"/>
+                                        <constraint firstItem="2IZ-Mm-P2U" firstAttribute="height" secondItem="5L3-AF-0rb" secondAttribute="height" id="gP2-FG-Iqa"/>
+                                        <constraint firstItem="2IZ-Mm-P2U" firstAttribute="width" secondItem="5L3-AF-0rb" secondAttribute="width" id="jAA-0V-RWl"/>
+                                        <constraint firstItem="2IZ-Mm-P2U" firstAttribute="centerX" secondItem="5L3-AF-0rb" secondAttribute="centerX" id="nN3-FA-XAS"/>
                                         <constraint firstItem="ZkH-LE-fFc" firstAttribute="centerX" secondItem="5L3-AF-0rb" secondAttribute="centerX" id="osQ-1X-Xzx"/>
+                                        <constraint firstItem="2IZ-Mm-P2U" firstAttribute="centerY" secondItem="5L3-AF-0rb" secondAttribute="centerY" id="xgo-3t-twM"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -1879,7 +1967,7 @@
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="black"/>
                                                                 </state>
                                                                 <connections>
-                                                                    <action selector="confirmSetEdits:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="OyQ-Op-r2g"/>
+                                                                    <action selector="confirmSetEdits:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="3YE-Us-OUY"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -2018,9 +2106,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="oTx-Mo-OiB" firstAttribute="leading" secondItem="Gpz-tn-RLC" secondAttribute="trailing" constant="5.5" id="Wml-FP-E8A"/>
-                                                <constraint firstAttribute="bottom" secondItem="Gpz-tn-RLC" secondAttribute="bottom" id="gKT-o2-RvH"/>
                                                 <constraint firstItem="Gpz-tn-RLC" firstAttribute="leading" secondItem="21j-Qx-kjj" secondAttribute="leading" constant="20" symbolic="YES" id="pgI-KP-DhU"/>
-                                                <constraint firstItem="Gpz-tn-RLC" firstAttribute="top" secondItem="21j-Qx-kjj" secondAttribute="top" id="xhc-qS-YUt"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -2045,14 +2131,18 @@
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4RU-jf-fY7" secondAttribute="bottom" constant="8" id="JLS-u0-s6P"/>
                             <constraint firstItem="uwo-2W-7Cp" firstAttribute="leading" secondItem="edS-OS-nDi" secondAttribute="trailing" constant="8" id="VpW-BD-a4T"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="height" secondItem="hse-aG-MuQ" secondAttribute="height" id="VvP-vj-c53"/>
+                            <constraint firstItem="iW4-Mb-cIT" firstAttribute="top" secondItem="A3y-JD-7T5" secondAttribute="top" constant="14.5" id="bCG-GN-tlg"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="width" secondItem="hse-aG-MuQ" secondAttribute="width" id="dCU-dR-WnD"/>
                             <constraint firstAttribute="trailing" secondItem="uwo-2W-7Cp" secondAttribute="trailing" id="gFc-u0-oA2"/>
+                            <constraint firstItem="A3y-JD-7T5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tbj-Kx-hmr" secondAttribute="trailing" constant="8" id="gt1-tJ-HqB"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="centerY" secondItem="hse-aG-MuQ" secondAttribute="centerY" id="iTe-53-Du1"/>
                             <constraint firstItem="uwo-2W-7Cp" firstAttribute="width" secondItem="A3y-JD-7T5" secondAttribute="width" multiplier="0.6" id="j7O-hW-8il"/>
                             <constraint firstItem="yPE-Vx-flJ" firstAttribute="width" secondItem="A3y-JD-7T5" secondAttribute="width" multiplier="1/3" constant="-8" id="jRj-HX-efO"/>
                             <constraint firstItem="JSz-T8-Kfy" firstAttribute="centerX" secondItem="y8s-DP-fZn" secondAttribute="centerX" id="jnN-Rd-P3i"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="centerX" secondItem="hse-aG-MuQ" secondAttribute="centerX" id="oOd-5J-IYd"/>
                             <constraint firstItem="JSz-T8-Kfy" firstAttribute="height" secondItem="y8s-DP-fZn" secondAttribute="height" id="oQY-Bn-Shh"/>
+                            <constraint firstItem="Gpz-tn-RLC" firstAttribute="top" secondItem="A3y-JD-7T5" secondAttribute="top" id="ttx-U6-m53"/>
+                            <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="Gpz-tn-RLC" secondAttribute="bottom" id="y18-8e-5sv"/>
                             <constraint firstItem="JSz-T8-Kfy" firstAttribute="width" secondItem="y8s-DP-fZn" secondAttribute="width" id="yey-YJ-LMe"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="trailing" secondItem="y8s-DP-fZn" secondAttribute="trailing" constant="8" id="yjE-9M-bCS"/>
                         </constraints>
@@ -2065,6 +2155,7 @@
                     <connections>
                         <outlet property="blur" destination="THr-QI-htI" id="C2c-hh-dQ2"/>
                         <outlet property="columnStack" destination="NBr-6X-K4g" id="u10-ZK-0iP"/>
+                        <outlet property="deckSavingView" destination="2IZ-Mm-P2U" id="2bE-Fy-tj6"/>
                         <outlet property="letterSetEditor" destination="21j-Qx-kjj" id="isU-yK-WHI"/>
                         <outlet property="letterSetEditorConstraint" destination="VpW-BD-a4T" id="yny-YZ-pvQ"/>
                         <outlet property="letterSetEditorView" destination="uwo-2W-7Cp" id="iZm-nF-1G3"/>

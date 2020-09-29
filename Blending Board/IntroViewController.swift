@@ -67,6 +67,20 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 	  return layout
 	}
 	@IBOutlet weak var blur: UIVisualEffectView!
+	@IBOutlet weak var deckSavingView: UIView!
+	@IBAction func finishDeck(_ sender: Any) {
+		UIView.animate(withDuration: 0.25) {
+			self.setCreationView.alpha = 0
+			self.setCreationView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+		} completion: { (_) in
+			self.deckSavingView.transform = CGAffineTransform(translationX: 1.2, y: 1.2)
+			UIView.animate(withDuration: 0.25) {
+				self.deckSavingView.alpha = 1
+				self.deckSavingView.transform = .identity
+			}
+		}
+
+	}
 	@IBAction func confirmDeck(_ sender: Any) {
 		NotificationCenter.default.post(name: .packChosen, object: LetterPack(name: "Custom Pack", beginning: selectedSets[0], middle: selectedSets[1], end: selectedSets[2]))
 		UIView.animate(withDuration: 0.25) { [self] in
