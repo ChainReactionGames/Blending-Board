@@ -43,7 +43,7 @@ extension LetterPack: Saving {
 	
     static let defaultPacks = [standardClosed, standardOpen]
 	static var allPacks = defaultPacks {
-		willSet {
+		didSet {
 			save()
 		}
 	}

@@ -7,6 +7,14 @@
 
 import UIKit
 class LetterCard: UIView {
+	func font() -> UIFont? {
+		print(UIFont.familyNames)
+		if letterField.font?.familyName != "DidactGothic" {
+			return UIFont(name: "DidactGothic-Regular", size: letterField.font?.pointSize ?? 62)
+		} else {
+			return letterField.font
+		}
+	}
     override func tintColorDidChange() {
         super.tintColorDidChange()
         UIView.animate(withDuration: 0.25) {
@@ -39,6 +47,7 @@ class LetterCard: UIView {
     func generateUI(animatingBlur: Bool = true) {
         let maxPos = LetterCard.maxPosition
         letterField.textColor = textColor
+		letterField.font = font()
         tintView.backgroundColor = tintColor
         tintView.isHidden = !letter.isVowel
         let changed = (blur.effect != nil && invisible) || (blur.effect == nil && !invisible)
@@ -142,50 +151,45 @@ class CardStack: UIView {
             letters.append(letters.remove(at: 0))
         }
         updateOrdering()
+		let tap = UITapGestureRecognizer(target: self, action: #selector(fallFrontCardFromTap))
+		addGestureRecognizer(tap)
     }
     func updateOrdering() {
         for card in cards {
             card.layer.zPosition = CGFloat(10 - card.intPosition)
         }
     }
+	@discardableResult func frontCardShouldFall(cardsToMove: ArraySlice<LetterCard>, forceFall: Bool = false) -> Bool {
+		var shouldFall = false
+		for card in cardsToMove {
+			if forceFall {
+				card.position = Double(card.intPosition) - 1
+			}
+			if card.intPosition != Int(card.position.rounded()) {
+				shouldFall = true
+				card.intPosition = Int(card.position.rounded())
+				UIView.animate(withDuration: 0.5) {
+					card.generateUI()
+				} completion: { (_) in
+					self.updateOrdering()
+				}
+			} else {
+				card.position = Double(card.intPosition)
+				UIView.animate(withDuration: 0.5) {
+					card.generateUI()
+				}
+			}
+		}
+		return shouldFall
+	}
     func panInCard(_ pan: UIPanGestureRecognizer) {
         let trans = pan.translation(in: self)
         let cardsToMove = cards[1 ..< cards.count]
         switch pan.state {
         case .ended, .cancelled, .failed:
-            var shouldFall = false
-            for card in cardsToMove {
-                if card.intPosition != Int(card.position.rounded()) {
-                    shouldFall = true
-                    card.intPosition = Int(card.position.rounded())
-                    UIView.animate(withDuration: 0.5) {
-                        card.generateUI()
-                    }
-                    self.updateOrdering()
-                } else {
-                    card.position = Double(card.intPosition)
-                    UIView.animate(withDuration: 0.5) {
-                        card.generateUI()
-                    }
-                }
-            }
+			let shouldFall = frontCardShouldFall(cardsToMove: cardsToMove)
             if shouldFall {
-                let firstCard = cards[0]
-                self.isUserInteractionEnabled = false
-                firstCard.fall { (_) in
-                    let card = firstCard
-                    card.isHidden = true
-                    card.intPosition = self.count - 1
-                    card.letter = self.letters.first ?? ""
-                    self.letters.append(self.letters.remove(at: 0))
-                    card.transform = .identity
-                    self.updateOrdering()
-                    card.generateUI(animatingBlur: false)
-                    card.isHidden = false
-                    self.cards.append(self.cards.remove(at: 0))
-                    print(card.intPosition)
-                    self.isUserInteractionEnabled = true
-                }
+				fallFrontCard()
             } else {
                 cards[0].returnSelf()
             }
@@ -194,9 +198,33 @@ class CardStack: UIView {
                 card.position = min(max(Double(card.intPosition) - (Double(trans.y) / 150), Double(card.intPosition) - 1), Double(card.intPosition))
                 UIView.animate(withDuration: 0.1) {
                     card.generateUI()
-                }
-                self.updateOrdering()
+				} completion: { (_) in
+					self.updateOrdering()
+				}
             }
         }
     }
+	@objc func fallFrontCardFromTap() {
+		frontCardShouldFall(cardsToMove: cards[1..<cards.count], forceFall: true)
+		fallFrontCard()
+	}
+	func fallFrontCard() {
+		let firstCard = cards[0]
+		self.isUserInteractionEnabled = false
+		firstCard.fall { (_) in
+			let card = firstCard
+			card.isHidden = true
+			card.intPosition = self.count - 1
+			card.letter = self.letters.first ?? ""
+			self.letters.append(self.letters.remove(at: 0))
+			card.transform = .identity
+			self.updateOrdering()
+			card.generateUI(animatingBlur: false)
+			card.isHidden = false
+			self.cards.append(self.cards.remove(at: 0))
+			print(card.intPosition)
+			self.isUserInteractionEnabled = true
+		}
+
+	}
 }

@@ -33,6 +33,9 @@
 		<string>SF-Pro-Rounded-Semibold</string>
 		<string>SF-Pro-Rounded-Thin</string>
 		<string>SF-Pro-Rounded-Ultralight</string>
+		<string>DidactGothic-Regular.ttf</string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
