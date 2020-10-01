@@ -134,7 +134,14 @@ class LetterCard: UIView {
 }
 class CardStack: UIView {
     var letterSet: LetterSet = .magicEMiddle
-    var letters = [Letter]()
+	var letters = [Letter]() {
+		didSet {
+			let letterContents = letters
+			while letters.count < 4 {
+				letters.append(contentsOf: letterContents)
+			}
+		}
+	}
     var count: Int {
         min(letters.count, 4)
     }
@@ -183,6 +190,9 @@ class CardStack: UIView {
 		return shouldFall
 	}
     func panInCard(_ pan: UIPanGestureRecognizer) {
+		if pan.state == .began {
+			superview?.bringSubviewToFront(self)
+		}
         let trans = pan.translation(in: self)
         let cardsToMove = cards[1 ..< cards.count]
         switch pan.state {

@@ -276,9 +276,9 @@ class LetterCell: UICollectionViewCell {
 		willSet {
 			if plus { return }
 			UIView.transition(with: self, duration: 0.25, options: [.transitionCrossDissolve]) { [self] in
-				colorView.backgroundColor = !newValue ? UIColor.white.withAlphaComponent(0.2) : .systemBlue
+				colorView.backgroundColor = !newValue ? UIColor.white.withAlphaComponent(0.2) : tintColor
 				selectionImg.image = UIImage(systemName: newValue ? "checkmark.circle.fill" : "circle")
-				layer.borderColor = UIColor.systemBlue.withAlphaComponent(0.5).cgColor
+				layer.borderColor = tintColor.withAlphaComponent(0.5).cgColor
 				layer.borderWidth = newValue ? 2 : 0
 			} completion: { (_) in
 			}

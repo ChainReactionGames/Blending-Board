@@ -15,14 +15,18 @@ struct Colors {
     static let blue: UIColor = .systemBlue
     static let purple: UIColor = .systemPurple
     static let pink: UIColor = .systemPink
-    static let gray: UIColor = .systemGray
+	static let gray: UIColor = .systemGray
+	static var event: UIColor {
+		pumpkin
+	}
+	static let pumpkin: UIColor = #colorLiteral(red: 1, green: 0.490264833, blue: 0, alpha: 1)
     static func make(named name: String, defaultColor: UIColor) -> UIColor {
         if let returningColor = UIColor(named: name) {
             return returningColor
         }
         return defaultColor
     }
-	static let tintOptions = [red, yellow, green, blue, purple, pink, gray]
+	static let tintOptions = [red, yellow, green, blue, purple, pink, gray, event]
 	static var chosenColorIndex: Int = Defaults.value(for: "colorIndex", type: Int.self) ?? 3 {
 		willSet {
 			Defaults.set(newValue, for: "colorIndex")
@@ -30,6 +34,26 @@ struct Colors {
 	}
 	static var chosenColor: UIColor {
 		tintOptions[chosenColorIndex]
+	}
+}
+class TintAdjustingLabel: UILabel {
+	override func tintColorDidChange() {
+		super.tintColorDidChange()
+		UIView.transition(with: self, duration: 0.2, options: [.transitionCrossDissolve], animations: { [self] in
+			if tintColor == .systemYellow {
+				textColor = .systemOrange
+			} else {
+				textColor = tintColor
+			}
+		}, completion: nil)
+	}
+}
+class TintAdjustingView: UIView {
+	override func tintColorDidChange() {
+		super.tintColorDidChange()
+		UIView.animate(withDuration: 0.2) { [self] in
+			backgroundColor = tintColor
+		}
 	}
 }
 class TintAdjustingBackgroundImage: UIImageView {
@@ -47,8 +71,10 @@ class TintAdjustingBackgroundImage: UIImageView {
                 return "backgroundPurple"
             case Colors.pink:
                 return "backgroundPink"
-            case Colors.gray:
-                return "backgroundGray"
+			case Colors.gray:
+				return "backgroundGray"
+			case Colors.pumpkin:
+				return "backgroundPumpkin"
             default:
                 return "defaultBackground"
             }
