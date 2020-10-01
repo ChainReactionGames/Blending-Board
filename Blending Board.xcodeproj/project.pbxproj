@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5918138125269D5B008A9C5F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918138025269D5B008A9C5F /* Settings.swift */; };
 		5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942656925104FF100B73AB1 /* IntroViewController.swift */; };
 		59705DF32523F5CB00458E50 /* DidactGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */; };
 		59C87B36252398AC004A46FC /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C87B35252398AC004A46FC /* Haptic.swift */; };
@@ -18,7 +19,7 @@
 		59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */; };
 		59E2DE37251563990045F02E /* Blending Board WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		59E2DE4525156BD30045F02E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8008024B3D28D0082F71C /* Colors.xcassets */; };
-		59E2DE4B251583BF0045F02E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE4A251583BF0045F02E /* Settings.swift */; };
+		59E2DE4B251583BF0045F02E /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE4A251583BF0045F02E /* Defaults.swift */; };
 		8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA824B385DC0082A4AA /* SF-Pro-Rounded-Black.otf */; };
 		8305207124B3C48100256516 /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAC24B385DC0082A4AA /* SF-Pro-Rounded-Bold.otf */; };
 		8305207224B3C48100256516 /* SF-Pro-Rounded-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDAF24B385DD0082A4AA /* SF-Pro-Rounded-Heavy.otf */; };
@@ -82,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5918138025269D5B008A9C5F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5942656925104FF100B73AB1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		59C87B35252398AC004A46FC /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DidactGothic-Regular.ttf"; sourceTree = "<group>"; };
@@ -93,7 +95,7 @@
 		59E2DE30251563990045F02E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59E2DE32251563990045F02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59E2DE38251563990045F02E /* Blending Board WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Blending Board WidgetExtension.entitlements"; sourceTree = "<group>"; };
-		59E2DE4A251583BF0045F02E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		59E2DE4A251583BF0045F02E /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		833195A124BCB05A00F02010 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8391DD6D24B376320082A4AA /* Blending Board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blending Board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8391DD7024B376320082A4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,7 +223,8 @@
 				83B8007E24B3CD5B0082F71C /* LetterCard.swift */,
 				5942656925104FF100B73AB1 /* IntroViewController.swift */,
 				59C87B35252398AC004A46FC /* Haptic.swift */,
-				59E2DE4A251583BF0045F02E /* Settings.swift */,
+				59E2DE4A251583BF0045F02E /* Defaults.swift */,
+				5918138025269D5B008A9C5F /* Settings.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
 				833195A024BCB04B00F02010 /* Design */,
@@ -465,7 +468,8 @@
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
 				833195A224BCB05A00F02010 /* Colors.swift in Sources */,
 				59C87B36252398AC004A46FC /* Haptic.swift in Sources */,
-				59E2DE4B251583BF0045F02E /* Settings.swift in Sources */,
+				59E2DE4B251583BF0045F02E /* Defaults.swift in Sources */,
+				5918138125269D5B008A9C5F /* Settings.swift in Sources */,
 				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
 				59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */,
 				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,

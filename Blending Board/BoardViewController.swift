@@ -160,6 +160,14 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		colorScrollView.stackViewHidden = false
 		updateRadius(of: colorPickerContainer, basedOn: colorScrollView)
 	}
+	@IBAction func home(_ sender: UIButton) {
+		setupView.isHidden = false
+		UIView.animate(withDuration: 0.25) {
+			self.cardStackView.alpha = 0
+		}
+		children.compactMap({ $0 as? IntroViewController }).first?.home()
+
+	}
 	
 }
 extension UIView {

@@ -6,8 +6,35 @@
 //
 
 import UIKit
-
+extension UIVisualEffectView {
+	func loseContents() {
+		UIView.animate(withDuration: 0.25) {
+			self.contentView.alpha = 0
+		}
+	}
+	func gainContents() {
+		UIView.animate(withDuration: 0.25) {
+			self.contentView.alpha = 1
+		}
+	}
+}
 class IntroViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+	func home() {
+		UIView.animate(withDuration: 0.25) { [self] in
+			blur.effect = UIBlurEffect(style: .dark)
+			blur.gainContents()
+			setCreationView.alpha = 0
+			myDecksView.alpha = 0
+			deckSavingView.alpha = 0
+			mainView.alpha = 0
+		} completion: { (_) in
+			UIView.animate(withDuration: 0.6) { [self] in
+				mainView.alpha = 1
+				mainView.transform = .identity
+			}
+		}
+
+	}
 	@IBOutlet weak var mainView: UIView!
 	@IBOutlet weak var setCreationView: UIView!
 	@IBOutlet weak var myDecksView: MyDecksView!
@@ -121,7 +148,7 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		NotificationCenter.default.post(name: .packChosen, object: pack)
 		UIView.animate(withDuration: 0.25) { [self] in
 			blur.effect = nil
-			_ = blur.subviews.map({ $0.alpha = 0 })
+			blur.loseContents()
 		}
 	}
 	@objc func editStackBtnPressed(_ notification: Notification) {
@@ -156,6 +183,8 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 	}
 	var editingColumn = 0
 	@IBAction func confirmSetEdits(_ sender: Any) {
+		UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+
 		selectedSets[editingColumn] = letterSetEditor.letterSet
 		UIView.animate(withDuration: 0.25) { [self] in
 			letterSetEditorView.transform = CGAffineTransform(translationX: letterSetEditor.bounds.width, y: 0)
@@ -332,7 +361,7 @@ class MyDecksView: UIView, UICollectionViewDelegate, UICollectionViewDataSource 
 		(subviews.compactMap({$0 as? UICollectionView}).first)?.collectionViewLayout = generateLayout()
 	}
 	func generateLayout() -> UICollectionViewLayout {
-		let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1/3), heightDimension: .estimated(50)))
+		let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1/3.2), heightDimension: .estimated(50)))
 		let group = NSCollectionLayoutGroup.horizontal(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .estimated(50)), subitems: [item])
 		group.interItemSpacing = .fixed(16)
 	  let section = NSCollectionLayoutSection(group: group)
@@ -346,7 +375,7 @@ class MyDecksView: UIView, UICollectionViewDelegate, UICollectionViewDataSource 
 		NotificationCenter.default.post(name: .packChosen, object: cell.deck)
 		UIView.animate(withDuration: 0.25) { [self] in
 			blur?.effect = nil
-			_ = blur?.subviews.map({ $0.alpha = 0 })
+			blur?.loseContents()
 		}
 	}
 
@@ -377,13 +406,18 @@ class DeckCell: UICollectionViewCell {
 		setup()
 	}
 	func setup() {
-		let swipe = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
-		swipe.direction = .left
-		self.addGestureRecognizer(swipe)
+		let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+		leftSwipe.direction = .left
+		self.addGestureRecognizer(leftSwipe)
+		let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
+		leftSwipe.direction = .right
+		self.addGestureRecognizer(rightSwipe)
 	}
 	@IBOutlet weak var trashView: UIVisualEffectView!
 	@objc func swiped() {
-		trashView.stackViewHidden.toggle()
+		UIView.animate(withDuration: 0.25){
+			self.trashView.isHidden.toggle()
+		}
 	}
 	@IBAction func editLetterSet(_ sender: Any) {
 	}

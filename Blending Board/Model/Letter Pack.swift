@@ -39,9 +39,10 @@ extension LetterPack: Saving {
     // MARK: - Default Values
     
     static var standardClosed = LetterPack(name: "Standard (Closed Syllable)", [.singleConsonantsBeginning, .closedSyllable, .singleConsonantsEnding])
-    static var standardOpen = LetterPack(name: "Standard (Open Syllable)", [.singleConsonantsBeginning, .openSyllable, .singleConsonantsEnding])
-	
-    static let defaultPacks = [standardClosed, standardOpen]
+	static var standardOpen = LetterPack(name: "Standard (Open Syllable)", [.singleConsonantsBeginning, .openSyllable, .singleConsonantsEnding])
+	static var blendingDemo = LetterPack(name: "Blending Demo", beginning: LetterSet(name: "Bl", position: .beginning, letters: ["bl"]), middle: LetterSet(name: "e", position: .middle, letters: ["E"]), end: LetterSet(name: "Nd", position: .beginning, letters: ["nd"]))
+
+    static let defaultPacks = [standardClosed, standardOpen, blendingDemo]
 	static var allPacks = defaultPacks {
 		didSet {
 			save()
