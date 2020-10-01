@@ -22,6 +22,15 @@ struct Colors {
         }
         return defaultColor
     }
+	static let tintOptions = [red, yellow, green, blue, purple, pink, gray]
+	static var chosenColorIndex: Int = Defaults.value(for: "colorIndex", type: Int.self) ?? 3 {
+		willSet {
+			Defaults.set(newValue, for: "colorIndex")
+		}
+	}
+	static var chosenColor: UIColor {
+		tintOptions[chosenColorIndex]
+	}
 }
 class TintAdjustingBackgroundImage: UIImageView {
     override func tintColorDidChange() {

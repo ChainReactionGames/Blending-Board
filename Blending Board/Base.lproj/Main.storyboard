@@ -2028,6 +2028,9 @@
                                                                                                         <state key="normal" image="trash.circle.fill" catalog="system">
                                                                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                                                                                                         </state>
+                                                                                                        <connections>
+                                                                                                            <action selector="trash:" destination="nvv-qN-R8Q" eventType="touchUpInside" id="qR5-2P-54h"/>
+                                                                                                        </connections>
                                                                                                     </button>
                                                                                                 </subviews>
                                                                                                 <constraints>

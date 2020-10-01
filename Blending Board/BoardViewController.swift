@@ -22,6 +22,7 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		setupStacks()
 		deckPicker.delegate = self
 		NotificationCenter.default.addObserver(self, selector: #selector(packConfirmed(_:)), name: .packChosen, object: nil)
+		view.tintColor = Colors.chosenColor
 		cardStackView.tintColor = .systemYellow
     }
 	@IBOutlet weak var cardStackView: UIStackView!
@@ -49,6 +50,9 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 	}
     @IBAction func changeTint(_ sender: UIButton) {
         view.tintColor = sender.tintColor
+		if let index = Colors.tintOptions.firstIndex(where: { $0 == sender.tintColor }) {
+			Colors.chosenColorIndex = index
+		}
 		colorPickerIconContainer.stackViewHidden = false
 		colorScrollView.stackViewHidden = true
 		updateRadius(of: colorPickerContainer, basedOn: colorScrollView)

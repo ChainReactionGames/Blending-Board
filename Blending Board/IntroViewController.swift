@@ -387,4 +387,8 @@ class DeckCell: UICollectionViewCell {
 	}
 	@IBAction func editLetterSet(_ sender: Any) {
 	}
+	@IBAction func trash(_ sender: Any) {
+		LetterPack.allPacks.removeAll(where: {$0 == self.deck})
+		(self.superview as? UICollectionView)?.reloadData()
+	}
 }
