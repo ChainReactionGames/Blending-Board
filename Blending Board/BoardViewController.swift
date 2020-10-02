@@ -28,6 +28,7 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 	@IBOutlet weak var cardStackView: UIStackView!
 	@objc func packConfirmed(_ notif: Notification) {
 		guard let pack = notif.object as? LetterPack else { return }
+		LetterPack.currentDeck = pack
 		newPack = pack
 		setupStacks()
 		UIView.animate(withDuration: 0.25) { [self] in

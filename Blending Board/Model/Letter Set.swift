@@ -39,7 +39,7 @@ extension LetterSet {
     
     // MARK: Syllables
     static var closedSyllable = LetterSet(name: "Closed Syllable", position: .middle, letters: ["a", "e", "i", "o", "u"])
-    static var openSyllable = LetterSet(name: "Open Syllable", position: .middle, letters: ["a", "e", "i", "o", "u", "y"])
+    static var openSyllable = LetterSet(name: "Open Syllable", position: .middle, letters: ["a", "e", "i", "o", "u"])
     static var magicEMiddle = LetterSet(name: "Magic E", position: .middle, letters: ["a", "e", "i", "o", "u", "y"])
     static var controlledR = LetterSet(name: "Controlled R", position: .middle, letters: ["ar", "er", "ir", "or", "ur"])
     static var shortVowelExceptions = LetterSet(name: "Short Vowel Exceptions", position: .middle, letters: ["ang", "ank", "ild", "ind", "ing", "ink", "old", "oll", "olt", "ong", "onk", "ost", "ung", "unk"])

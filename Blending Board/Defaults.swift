@@ -90,11 +90,9 @@ extension Saving {
 	}
 	static func save() {
 		Defaults.current.set(information.jsonEncoded, forKey: key)
-		print(Defaults.value(for: key, type: Data.self)?.prettyPrintedJSONString)
 	}
 	static func retrieve() {
 		let dataType = type(of: information).self
-		print(Defaults.value(for: key, type: Data.self)?.prettyPrintedJSONString)
 		let decoder = JSONDecoder()
 		if let decoded = try? decoder.decode(dataType, from: Defaults.value(for: key, type: Data.self) ?? Data()) {
 			if let countFunction = count {

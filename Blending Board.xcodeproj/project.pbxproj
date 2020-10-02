@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5918138125269D5B008A9C5F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918138025269D5B008A9C5F /* Settings.swift */; };
+		5918138F252762ED008A9C5F /* QR Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918138E252762ED008A9C5F /* QR Reading.swift */; };
 		5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942656925104FF100B73AB1 /* IntroViewController.swift */; };
 		59705DF32523F5CB00458E50 /* DidactGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */; };
 		59C87B36252398AC004A46FC /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C87B35252398AC004A46FC /* Haptic.swift */; };
@@ -84,6 +85,7 @@
 
 /* Begin PBXFileReference section */
 		5918138025269D5B008A9C5F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		5918138E252762ED008A9C5F /* QR Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QR Reading.swift"; sourceTree = "<group>"; };
 		5942656925104FF100B73AB1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		59C87B35252398AC004A46FC /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DidactGothic-Regular.ttf"; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				59C87B35252398AC004A46FC /* Haptic.swift */,
 				59E2DE4A251583BF0045F02E /* Defaults.swift */,
 				5918138025269D5B008A9C5F /* Settings.swift */,
+				5918138E252762ED008A9C5F /* QR Reading.swift */,
 				8391DDA624B385C80082A4AA /* Fonts */,
 				8391DDA124B383830082A4AA /* Model */,
 				833195A024BCB04B00F02010 /* Design */,
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5918138F252762ED008A9C5F /* QR Reading.swift in Sources */,
 				8391DD7524B376320082A4AA /* BoardViewController.swift in Sources */,
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
@@ -541,7 +545,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -566,7 +570,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -708,7 +712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -733,7 +737,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

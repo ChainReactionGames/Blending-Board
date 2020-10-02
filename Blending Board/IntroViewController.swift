@@ -83,16 +83,28 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "setCell", for: indexPath) as? LetterSetCollectionViewCell else { return UICollectionViewCell() }
 		let set = LetterSet.sets(for: positions[collectionView.tag] ?? .all)[indexPath.row]
-		cell.currentlySelected = selectedSets[collectionView.tag] == set
+		let currentlySelected = selectedSets[collectionView.tag] == set
+		cell.currentlySelected = currentlySelected
+		cell.adding = (!currentlySelected && !letterSetEditorView.isHidden)
 		cell.letterSet = set
 		cell.column = collectionView.tag
 		return cell
 	}
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		
 		let set = LetterSet.sets(for: positions[collectionView.tag] ?? .all)[indexPath.row]
+		if !letterSetEditorView.isHidden {
+			letterSetEditor.baseSet.letters += set.letters
+			letterSetEditor.letterSet.letters += set.letters
+			_ = letterSetEditor.subviews.compactMap({ $0 as? UICollectionView }).map({ $0.reloadData() })
+			Haptic.feedback(.select)
+			return
+		}
 		selectedSets[collectionView.tag] = set
 		for cell in collectionView.visibleCells as? [LetterSetCollectionViewCell] ?? [] {
-			cell.currentlySelected = cell.letterSet == set
+			let currentlySelected = cell.letterSet == set
+			cell.currentlySelected = currentlySelected
+			cell.adding = (!currentlySelected && !letterSetEditorView.isHidden)
 		}
 		UISelectionFeedbackGenerator().selectionChanged()
 	}
@@ -137,6 +149,10 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 
 	}
 	@IBOutlet weak var deckNameField: UITextField!
+	@IBAction func autoStart(_ sender: UIButton) {
+		selectedSets = LetterPack.currentDeck.sets
+		confirmDeck(sender)
+	}
 	@IBAction func confirmDeck(_ sender: UIButton) {
 		var pack = LetterPack(name: nil, selectedSets)
 		func deny() -> Bool {
@@ -168,6 +184,12 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		_ = letterSetEditor.subviews.compactMap({ $0 as? UICollectionView }).map({ $0.reloadData() })
 		letterSetEditorView.transform = CGAffineTransform(translationX: letterSetEditor.bounds.width, y: 0)
 		letterSetEditorView.isHidden = false
+		for visibleCell in collectionViews[cell.column].visibleCells as? [LetterSetCollectionViewCell] ?? [] {
+			let currentlySelected = visibleCell.letterSet == cell.letterSet
+			visibleCell.currentlySelected = currentlySelected
+			visibleCell.adding = (!currentlySelected && !letterSetEditorView.isHidden)
+		}
+
 		UIView.animate(withDuration: 0.25) { [self] in
 			letterSetEditorView.transform = .identity
 			if setCollectionViews.isEmpty { return }
@@ -193,13 +215,21 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 	}
 	var editingColumn = 0
 	@IBAction func confirmSetEdits(_ sender: Any) {
-		UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+		if let field = letterSetEditor.currentField {
+			_ = letterSetEditor.textFieldShouldReturn(field)
+			if let text = field.text, text.replacingOccurrences(of: " ", with: "") != "" {
+				letterSetEditor.letterSet.letters.append(text)
+			}
+		}
 
 		selectedSets[editingColumn] = letterSetEditor.letterSet
 		UIView.animate(withDuration: 0.25) { [self] in
 			letterSetEditorView.transform = CGAffineTransform(translationX: letterSetEditor.bounds.width, y: 0)
 			for coll in setCollectionViews {
 				coll.stackViewHidden = false
+				for cell in coll.visibleCells.compactMap({$0 as? LetterSetCollectionViewCell }) {
+					cell.adding = false
+				}
 			}
 			for item in columnStack.arrangedSubviews {
 				item.stackViewHidden = false
@@ -246,6 +276,15 @@ class LetterSetCollectionViewCell: UICollectionViewCell {
 			label.text = newValue.name
 		}
 	}
+	var adding: Bool = false {
+		willSet {
+			editBtn.setImage(UIImage(systemName: newValue ? "plus" : "pencil"), for: .normal)
+			editBtn.isUserInteractionEnabled = !newValue
+			UIView.animate(withDuration: 0.25) {
+				self.editBtn.alpha = newValue || self.currentlySelected ? 1 : 0
+			}
+		}
+	}
 	var column = 1
 	var currentlySelected: Bool = false {
 		willSet {
@@ -282,10 +321,12 @@ class LetterSetEditor: UIView, UICollectionViewDelegate, UICollectionViewDataSou
 		collectionView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 250, right: 0)
 		return cell
 	}
+	var currentField: UITextField?
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		guard let cell = collectionView.cellForItem(at: indexPath) as? LetterCell else { return }
 		UISelectionFeedbackGenerator().selectionChanged()
 		if cell.plus {
+			currentField = cell.field
 			cell.field.isHidden = false
 			cell.letterLbl.isHidden = true
 			cell.field.becomeFirstResponder()

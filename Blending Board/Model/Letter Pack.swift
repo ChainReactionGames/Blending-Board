@@ -48,5 +48,13 @@ extension LetterPack: Saving {
 			save()
 		}
 	}
-
+	static func getCurrentDeckFromDefaults() -> LetterPack {
+		guard let data = Defaults.value(for: "current deck", type: Data.self) else { return standardOpen }
+		return (try? JSONDecoder().decode(LetterPack.self, from: data)) ?? standardOpen
+	}
+	static var currentDeck = getCurrentDeckFromDefaults() {
+		didSet {
+			Defaults.set(currentDeck.jsonEncoded, for: "current deck")
+		}
+	}
 }

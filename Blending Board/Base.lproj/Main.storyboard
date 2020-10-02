@@ -50,7 +50,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2AM-ge-37H">
                                                         <rect key="frame" x="0.0" y="0.0" width="344.5" height="344"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RV0-LP-7RU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="344" height="344"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="344"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -111,7 +111,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-em-0QX">
                                                         <rect key="frame" x="0.0" y="0.0" width="364.5" height="364"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TsB-Kw-xFK">
-                                                            <rect key="frame" x="0.0" y="0.0" width="364" height="364"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="364.5" height="364"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -172,7 +172,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTX-pl-iCR">
                                                         <rect key="frame" x="0.0" y="0.0" width="384.5" height="384"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0VT-ve-Hzl">
-                                                            <rect key="frame" x="0.0" y="0.0" width="384" height="384"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="384"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -233,7 +233,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WND-n7-1qT">
                                                         <rect key="frame" x="0.0" y="0.0" width="404.5" height="404"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rHR-bm-1PG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="404" height="404"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="404.5" height="404"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -594,7 +594,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcT-ge-XjY">
                                                         <rect key="frame" x="0.0" y="0.0" width="344.5" height="344"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="p0G-4h-SWA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="344"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="344.5" height="344"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -655,7 +655,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6c-7L-fZO">
                                                         <rect key="frame" x="0.0" y="0.0" width="364.5" height="364"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3z4-Fg-SbN">
-                                                            <rect key="frame" x="0.0" y="0.0" width="365" height="364"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="364.5" height="364"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -716,7 +716,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lje-mY-1hN">
                                                         <rect key="frame" x="0.0" y="0.0" width="384.5" height="384"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="imd-aF-bpi">
-                                                            <rect key="frame" x="0.0" y="0.0" width="385" height="384"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="384.5" height="384"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -777,7 +777,7 @@
                                                     <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RU-zx-j24">
                                                         <rect key="frame" x="0.0" y="0.0" width="404.5" height="404"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sa6-zi-zbU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="405" height="404"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="404.5" height="404"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </view>
                                                         <blurEffect style="regular"/>
@@ -1351,9 +1351,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="g8P-HD-jwg"/>
                                 <exclude reference="LcU-sX-yuB"/>
                                 <exclude reference="NgI-oe-asZ"/>
-                                <exclude reference="g8P-HD-jwg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
@@ -1446,6 +1446,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                             <constraint firstItem="VJc-ee-xK9" firstAttribute="leading" secondItem="z2Z-z7-ocm" secondAttribute="leading" constant="8" id="Jnb-w1-gf8"/>
                                             <constraint firstItem="VJc-ee-xK9" firstAttribute="top" secondItem="5G0-8t-l0i" secondAttribute="bottom" constant="16" id="R1I-yB-llf"/>
                                             <constraint firstItem="5G0-8t-l0i" firstAttribute="top" secondItem="z2Z-z7-ocm" secondAttribute="top" constant="8" id="YgT-ct-21q"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5G0-8t-l0i" secondAttribute="trailing" id="cjx-di-08m"/>
                                             <constraint firstAttribute="bottom" secondItem="VJc-ee-xK9" secondAttribute="bottom" constant="20" id="sqW-Li-0cl"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -1556,13 +1557,13 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4RU-jf-fY7">
-                                                                <rect key="frame" x="459.5" y="743.5" width="447" height="144"/>
+                                                                <rect key="frame" x="555" y="743.5" width="256" height="80"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmk-oE-oIa">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="143.5" height="144"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbi-DE-zhm">
-                                                                                <rect key="frame" x="10.5" y="7.5" width="122.5" height="129.5"/>
+                                                                                <rect key="frame" x="11.5" y="10" width="57" height="60"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" secondItem="Wbi-DE-zhm" secondAttribute="height" multiplier="293:309" id="qZC-Bt-d23"/>
                                                                                 </constraints>
@@ -1575,7 +1576,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
-                                                                            <constraint firstItem="Wbi-DE-zhm" firstAttribute="height" secondItem="mmk-oE-oIa" secondAttribute="height" multiplier="0.9" id="06J-HX-hcA"/>
+                                                                            <constraint firstItem="Wbi-DE-zhm" firstAttribute="height" secondItem="mmk-oE-oIa" secondAttribute="height" multiplier="0.75" id="06J-HX-hcA"/>
                                                                             <constraint firstAttribute="width" secondItem="mmk-oE-oIa" secondAttribute="height" multiplier="1:1" id="FIo-C6-ebf"/>
                                                                             <constraint firstItem="Wbi-DE-zhm" firstAttribute="centerX" secondItem="mmk-oE-oIa" secondAttribute="centerX" id="ZhB-sh-cUK"/>
                                                                             <constraint firstItem="Wbi-DE-zhm" firstAttribute="centerY" secondItem="mmk-oE-oIa" secondAttribute="centerY" id="mGS-1N-KEp"/>
@@ -1587,10 +1588,10 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gu-Z6-w9P">
-                                                                        <rect key="frame" x="151.5" y="0.0" width="144" height="144"/>
+                                                                        <rect key="frame" x="88" y="0.0" width="80" height="80"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCp-J4-VRn">
-                                                                                <rect key="frame" x="10.5" y="7.5" width="123" height="129.5"/>
+                                                                                <rect key="frame" x="6" y="4" width="68" height="72"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" secondItem="LCp-J4-VRn" secondAttribute="height" multiplier="293:309" id="jdB-XD-0dS"/>
                                                                                 </constraints>
@@ -1617,10 +1618,10 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                         </userDefinedRuntimeAttributes>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsc-JQ-U7L">
-                                                                        <rect key="frame" x="303.5" y="0.0" width="143.5" height="144"/>
+                                                                        <rect key="frame" x="176" y="0.0" width="80" height="80"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHL-a7-qWI">
-                                                                                <rect key="frame" x="17" y="10" width="109.5" height="115.5"/>
+                                                                                <rect key="frame" x="9.5" y="6" width="61" height="64"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" secondItem="dHL-a7-qWI" secondAttribute="height" multiplier="293:309" id="H7F-nC-hay"/>
                                                                                 </constraints>
@@ -1647,6 +1648,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                 <constraints>
                                                                     <constraint firstItem="hsc-JQ-U7L" firstAttribute="width" secondItem="hsc-JQ-U7L" secondAttribute="height" multiplier="1:1" id="6QA-GB-W3i"/>
                                                                     <constraint firstItem="hsc-JQ-U7L" firstAttribute="width" secondItem="hsc-JQ-U7L" secondAttribute="height" multiplier="1:1" id="ATi-EU-Wwr"/>
+                                                                    <constraint firstAttribute="height" constant="80" id="bnz-kX-tIk"/>
                                                                     <constraint firstItem="0gu-Z6-w9P" firstAttribute="width" secondItem="0gu-Z6-w9P" secondAttribute="height" multiplier="1:1" id="c0s-jf-TaO"/>
                                                                     <constraint firstAttribute="width" secondItem="4RU-jf-fY7" secondAttribute="height" multiplier="3" constant="16" id="hf9-y4-cr0"/>
                                                                 </constraints>
@@ -1666,6 +1668,12 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                         <constraint firstAttribute="width" secondItem="yPE-Vx-flJ" secondAttribute="height" id="4YI-8Q-X34"/>
                                                     </constraints>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teG-lr-Vfo">
+                                                    <rect key="frame" x="459.5" y="288.5" width="447" height="447"/>
+                                                    <connections>
+                                                        <action selector="autoStart:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="otn-BP-SDO"/>
+                                                    </connections>
+                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFl-7I-S3I">
                                                     <rect key="frame" x="936.5" y="449" width="137.5" height="126.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
@@ -1688,6 +1696,18 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                         <action selector="createDeck:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="Hb9-BQ-9c7"/>
                                                     </connections>
                                                 </button>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBq-mo-wLa">
+                                                    <rect key="frame" x="1320.5" y="20" width="25.5" height="41"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="qrcode.viewfinder" catalog="system">
+                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="myDecks:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="yJz-cc-my7"/>
+                                                        <segue destination="c4z-Gq-GWn" kind="showDetail" id="k7v-Yn-7sw"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
@@ -1697,6 +1717,8 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                 <constraint firstItem="4RU-jf-fY7" firstAttribute="top" secondItem="yPE-Vx-flJ" secondAttribute="bottom" constant="8" id="DZJ-1p-7vx"/>
                                                 <constraint firstItem="8dQ-Ad-fcb" firstAttribute="top" secondItem="lFl-7I-S3I" secondAttribute="bottom" constant="2" id="E9a-IG-IbC"/>
                                                 <constraint firstItem="0H5-DU-flg" firstAttribute="centerY" secondItem="FVc-wp-h1a" secondAttribute="centerY" id="IY4-jM-Klj"/>
+                                                <constraint firstItem="teG-lr-Vfo" firstAttribute="centerX" secondItem="yPE-Vx-flJ" secondAttribute="centerX" id="Jqo-9d-zbR"/>
+                                                <constraint firstItem="teG-lr-Vfo" firstAttribute="height" secondItem="yPE-Vx-flJ" secondAttribute="height" id="OI5-Cc-BWg"/>
                                                 <constraint firstItem="yPE-Vx-flJ" firstAttribute="centerX" secondItem="FVc-wp-h1a" secondAttribute="centerX" id="S4e-15-JTw"/>
                                                 <constraint firstItem="0H5-DU-flg" firstAttribute="height" secondItem="FVc-wp-h1a" secondAttribute="height" id="Wtq-ta-yyq"/>
                                                 <constraint firstItem="4RU-jf-fY7" firstAttribute="width" relation="lessThanOrEqual" secondItem="yPE-Vx-flJ" secondAttribute="width" id="YbI-GF-6fD"/>
@@ -1706,7 +1728,9 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                 <constraint firstItem="2WM-Wm-B79" firstAttribute="centerX" secondItem="NZt-n5-PEX" secondAttribute="centerX" id="dYf-FZ-yen"/>
                                                 <constraint firstItem="yPE-Vx-flJ" firstAttribute="centerY" secondItem="FVc-wp-h1a" secondAttribute="centerY" id="fAX-Wq-PLp"/>
                                                 <constraint firstItem="NZt-n5-PEX" firstAttribute="centerY" secondItem="yPE-Vx-flJ" secondAttribute="centerY" id="hYU-Kw-EJB"/>
+                                                <constraint firstItem="teG-lr-Vfo" firstAttribute="width" secondItem="yPE-Vx-flJ" secondAttribute="width" id="nnr-im-h1b"/>
                                                 <constraint firstItem="4RU-jf-fY7" firstAttribute="centerX" secondItem="yPE-Vx-flJ" secondAttribute="centerX" id="pX3-oc-OSH"/>
+                                                <constraint firstItem="teG-lr-Vfo" firstAttribute="centerY" secondItem="yPE-Vx-flJ" secondAttribute="centerY" id="qhJ-Wr-80Z"/>
                                             </constraints>
                                         </view>
                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZkH-LE-fFc">
@@ -2111,7 +2135,6 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                     <constraints>
                                                         <constraint firstItem="RRv-CN-qA5" firstAttribute="centerX" secondItem="92Q-N5-HXQ" secondAttribute="centerX" id="3nP-pU-Tg9"/>
                                                         <constraint firstItem="RRv-CN-qA5" firstAttribute="centerY" secondItem="92Q-N5-HXQ" secondAttribute="centerY" id="DeO-hR-jR2"/>
-                                                        <constraint firstAttribute="trailing" secondItem="RRv-CN-qA5" secondAttribute="trailing" constant="10" id="IKb-f5-Mw9"/>
                                                         <constraint firstItem="RRv-CN-qA5" firstAttribute="top" secondItem="92Q-N5-HXQ" secondAttribute="top" constant="8" id="KVH-OI-QK0"/>
                                                         <constraint firstItem="RRv-CN-qA5" firstAttribute="leading" secondItem="92Q-N5-HXQ" secondAttribute="leading" constant="10" id="pdd-PF-eq0"/>
                                                     </constraints>
@@ -2325,6 +2348,16 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkC-1u-P3e">
                                             <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-x2-R8h">
+                                                    <rect key="frame" x="217.5" y="460" width="931" height="41"/>
+                                                    <color key="backgroundColor" systemColor="systemFillColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="radialCurve" value="NO"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNl-h6-eIO">
                                                     <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9HZ-jP-Aom">
@@ -2359,16 +2392,6 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                         <blurEffect style="dark"/>
                                                     </vibrancyEffect>
                                                 </visualEffectView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-x2-R8h">
-                                                    <rect key="frame" x="217.5" y="460" width="931" height="41"/>
-                                                    <color key="backgroundColor" systemColor="systemFillColor"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="radialCurve" value="NO"/>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f9g-4y-OPj">
                                                     <rect key="frame" x="227.5" y="465" width="911" height="94"/>
                                                     <subviews>
@@ -2573,7 +2596,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                     <rect key="frame" x="459.5" y="0.0" width="451.5" height="43"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8bQ-0a-Qaq">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="388" height="42.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="387.5" height="42.5"/>
                                                                             <subviews>
                                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laT-TW-xkT">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="41.5" height="42.5"/>
@@ -2681,7 +2704,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                                     </connections>
                                                                                 </button>
                                                                                 <button opaque="NO" tag="-1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ic-dS-FmW">
-                                                                                    <rect key="frame" x="346.5" y="0.0" width="41.5" height="42.5"/>
+                                                                                    <rect key="frame" x="346.5" y="0.0" width="41" height="42.5"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" secondItem="3Ic-dS-FmW" secondAttribute="height" multiplier="41:42" id="h6K-L9-V0g"/>
                                                                                     </constraints>
@@ -2771,7 +2794,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                             <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwo-2W-7Cp">
                                 <rect key="frame" x="546.5" y="0.0" width="819.5" height="1024"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="L22-HM-cGi">
-                                    <rect key="frame" x="0.0" y="0.0" width="819" height="1024"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="819.5" height="1024"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21j-Qx-kjj" customClass="LetterSetEditor" customModule="Blending_Board" customModuleProvider="target">
@@ -2964,6 +2987,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="teQ-C7-5qZ" secondAttribute="bottom" constant="8" id="NMY-aZ-CuK"/>
                             <constraint firstItem="teQ-C7-5qZ" firstAttribute="leading" secondItem="A3y-JD-7T5" secondAttribute="leading" constant="8" id="NhE-6I-upa"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="11t-St-QoE" secondAttribute="bottom" constant="8" id="QUJ-9t-7Sj"/>
+                            <constraint firstItem="A3y-JD-7T5" firstAttribute="trailing" secondItem="uBq-mo-wLa" secondAttribute="trailing" constant="20" id="R5a-mC-MPH"/>
                             <constraint firstItem="uwo-2W-7Cp" firstAttribute="leading" secondItem="edS-OS-nDi" secondAttribute="trailing" constant="8" id="VpW-BD-a4T"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="height" secondItem="hse-aG-MuQ" secondAttribute="height" id="VvP-vj-c53"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="Zeb-d3-PHE" secondAttribute="bottom" id="aTo-X3-lbg"/>
@@ -2971,6 +2995,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                             <constraint firstItem="THr-QI-htI" firstAttribute="width" secondItem="hse-aG-MuQ" secondAttribute="width" id="dCU-dR-WnD"/>
                             <constraint firstAttribute="trailing" secondItem="uwo-2W-7Cp" secondAttribute="trailing" id="gFc-u0-oA2"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tbj-Kx-hmr" secondAttribute="trailing" constant="8" id="gt1-tJ-HqB"/>
+                            <constraint firstItem="uBq-mo-wLa" firstAttribute="top" secondItem="A3y-JD-7T5" secondAttribute="top" constant="20" id="hhQ-Zn-WkS"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="centerY" secondItem="hse-aG-MuQ" secondAttribute="centerY" id="iTe-53-Du1"/>
                             <constraint firstItem="uwo-2W-7Cp" firstAttribute="width" secondItem="A3y-JD-7T5" secondAttribute="width" multiplier="0.6" id="j7O-hW-8il"/>
                             <constraint firstItem="yPE-Vx-flJ" firstAttribute="width" secondItem="A3y-JD-7T5" secondAttribute="width" multiplier="1/3" constant="-8" id="jRj-HX-efO"/>
@@ -3016,6 +3041,49 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
             </objects>
             <point key="canvasLocation" x="-764.78873239436621" y="-592.5"/>
         </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="ZJM-Cc-13m">
+            <objects>
+                <viewController id="c4z-Gq-GWn" customClass="ScannerViewController" customModule="Blending_Board" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zS5-6f-LjG">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOP-qp-IeL">
+                                <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJC-5h-y5Y">
+                                <rect key="frame" x="8" y="8" width="25.5" height="24.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="xmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="N66-iB-l6e" eventType="touchUpInside" id="YvG-yT-MTa"/>
+                                    <action selector="close:" destination="c4z-Gq-GWn" eventType="touchUpInside" id="7ph-za-Ufe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rXd-yu-gIg"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZOP-qp-IeL" firstAttribute="width" secondItem="zS5-6f-LjG" secondAttribute="width" id="06Z-fy-Y1z"/>
+                            <constraint firstItem="ZOP-qp-IeL" firstAttribute="height" secondItem="zS5-6f-LjG" secondAttribute="height" id="8a4-Bc-yga"/>
+                            <constraint firstItem="ZOP-qp-IeL" firstAttribute="centerX" secondItem="zS5-6f-LjG" secondAttribute="centerX" id="ORg-ur-f1E"/>
+                            <constraint firstItem="JJC-5h-y5Y" firstAttribute="top" secondItem="rXd-yu-gIg" secondAttribute="top" constant="8" id="RLW-10-EdC"/>
+                            <constraint firstItem="JJC-5h-y5Y" firstAttribute="leading" secondItem="rXd-yu-gIg" secondAttribute="leading" constant="8" id="ZVa-oB-n7H"/>
+                            <constraint firstItem="ZOP-qp-IeL" firstAttribute="centerY" secondItem="zS5-6f-LjG" secondAttribute="centerY" id="r58-2e-Y0S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qrCameraView" destination="ZOP-qp-IeL" id="8cm-JH-rn9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="web-Xu-56G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="-593"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.circle.fill" catalog="system" width="128" height="121"/>
@@ -3031,6 +3099,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
         <image name="paintbrush.fill" catalog="system" width="122" height="128"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <image name="square.stack" catalog="system" width="113" height="128"/>

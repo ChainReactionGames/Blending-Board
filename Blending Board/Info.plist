@@ -34,8 +34,6 @@
 		<string>SF-Pro-Rounded-Thin</string>
 		<string>SF-Pro-Rounded-Ultralight</string>
 		<string>DidactGothic-Regular.ttf</string>
-		<string></string>
-		<string></string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
@@ -73,10 +71,10 @@
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>The camera is only used for scanning QR codes of decks</string>
 </dict>
 </plist>
