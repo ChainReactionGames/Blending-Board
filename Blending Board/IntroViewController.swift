@@ -19,6 +19,10 @@ extension UIVisualEffectView {
 	}
 }
 class IntroViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+	
+	@IBAction func goHome(_ sender: Any) {
+		home()
+	}
 	func home() {
 		UIView.animate(withDuration: 0.25) { [self] in
 			blur.effect = UIBlurEffect(style: .dark)
@@ -27,6 +31,7 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 			myDecksView.alpha = 0
 			deckSavingView.alpha = 0
 			mainView.alpha = 0
+			settingsView.alpha = 0
 		} completion: { (_) in
 			UIView.animate(withDuration: 0.6) { [self] in
 				mainView.alpha = 1
@@ -102,6 +107,11 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		NotificationCenter.default.addObserver(self, selector: #selector(editStackBtnPressed(_:)), name: .init("Edit Letter Set"), object: nil)
 
     }
+	override func didMove(toParent parent: UIViewController?) {
+		super.didMove(toParent: parent)
+		darkModeSelector.selectedSegmentIndex = Settings.darkModeOverride
+		darkModeChange(darkModeSelector)
+	}
 	@IBOutlet var collectionViews: [UICollectionView]!
 	func generateLayout() -> UICollectionViewLayout {
 		let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1)))
@@ -201,6 +211,31 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		}
 
 	}
+	
+	
+	
+	@IBAction func openSettings(_ sender: Any) {
+		UIView.animate(withDuration: 0.25) {
+			self.mainView.alpha = 0
+		} completion: { (_) in
+			self.settingsView.transform = CGAffineTransform(translationX: 0, y: self.settingsView.bounds.height / 2)
+			UIView.animate(withDuration: 0.25) {
+				self.settingsView.alpha = 1
+				self.settingsView.transform = .identity
+			}
+		}
+
+	}
+	@IBOutlet weak var settingsView: UIView!
+	@IBOutlet weak var darkModeSelector: UISegmentedControl!
+	@IBAction func darkModeChange(_ sender: UISegmentedControl) {
+		Settings.darkModeOverride = sender.selectedSegmentIndex
+		parent?.overrideUserInterfaceStyle = Settings.styleFromNumber(sender.selectedSegmentIndex)
+	}
+	@IBAction func changeTint(_ sender: UIButton) {
+		(parent as? BoardViewController)?.changeTint(sender)
+	}
+	
 }
 class LetterSetCollectionViewCell: UICollectionViewCell {
 	@IBOutlet weak var label: UILabel!
@@ -359,6 +394,8 @@ class MyDecksView: UIView, UICollectionViewDelegate, UICollectionViewDataSource 
 	override func layoutSubviews() {
 		super.layoutSubviews()
 		(subviews.compactMap({$0 as? UICollectionView}).first)?.collectionViewLayout = generateLayout()
+		(subviews.compactMap({$0 as? UICollectionView}).first)?.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
+
 	}
 	func generateLayout() -> UICollectionViewLayout {
 		let item = NSCollectionLayoutItem(layoutSize: .init(widthDimension: .fractionalWidth(1/3.2), heightDimension: .estimated(50)))
