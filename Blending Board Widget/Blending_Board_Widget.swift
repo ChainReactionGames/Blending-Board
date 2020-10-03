@@ -89,9 +89,9 @@ struct BlendingBoardCard: View {
 		ZStack {
 			RoundedRectangle(cornerRadius: 15)
 			RoundedRectangle(cornerRadius: 15)
-				.foregroundColor(.blue).opacity(vowel ? 0.3 : 0)
+				.foregroundColor(.yellow).opacity(vowel ? 0.3 : 0)
 			Text(letters)
-				.foregroundColor(vowel ? .blue : Color("Text"))
+				.foregroundColor(Color("Text"))
 				.font(.system(.largeTitle, design: .rounded)).fontWeight(.medium)
 		}
 	}
