@@ -46,6 +46,7 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 	@IBAction func myDecks(_ sender: Any) {
 		let width = self.view.bounds.width
 		self.myDecksView.transform = CGAffineTransform(translationX: width, y: 0)
+		myDecksView.subviews.compactMap({ $0 as? UICollectionView }).first?.reloadData()
 		UIView.animateKeyframes(withDuration: 1, delay: 0, options: [.calculationModeCubic], animations: {
 			UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 2/3) {
 				self.mainView.transform = CGAffineTransform(translationX: -width, y: 0)

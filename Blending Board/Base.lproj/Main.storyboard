@@ -1051,6 +1051,62 @@
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzH-oy-uDK">
+                                <rect key="frame" x="1308" y="8" width="50" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Vdx-fW-W8G">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eav-aS-TJx">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HwF-3X-uR4">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smE-Yz-8ud">
+                                                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="smE-Yz-8ud" secondAttribute="height" id="79l-ob-20D"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <state key="normal" image="qrcode" catalog="system">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="qrCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kl0-Rz-Lgk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="smE-Yz-8ud" firstAttribute="height" secondItem="HwF-3X-uR4" secondAttribute="height" priority="999" constant="-10" id="KIl-UX-GQW"/>
+                                                    <constraint firstItem="smE-Yz-8ud" firstAttribute="centerX" secondItem="HwF-3X-uR4" secondAttribute="centerX" id="Tp6-dF-Xkj"/>
+                                                    <constraint firstItem="smE-Yz-8ud" firstAttribute="width" secondItem="HwF-3X-uR4" secondAttribute="width" constant="-10" id="Zpk-Oe-cBy"/>
+                                                    <constraint firstItem="smE-Yz-8ud" firstAttribute="centerY" secondItem="HwF-3X-uR4" secondAttribute="centerY" id="taA-im-b82"/>
+                                                </constraints>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="dark"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Eav-aS-TJx" firstAttribute="height" secondItem="Vdx-fW-W8G" secondAttribute="height" id="KBT-Dw-gJZ"/>
+                                        <constraint firstItem="Eav-aS-TJx" firstAttribute="centerX" secondItem="Vdx-fW-W8G" secondAttribute="centerX" id="P1M-EG-Cof"/>
+                                        <constraint firstItem="Eav-aS-TJx" firstAttribute="width" secondItem="Vdx-fW-W8G" secondAttribute="width" id="dcB-g3-48w"/>
+                                        <constraint firstItem="Eav-aS-TJx" firstAttribute="centerY" secondItem="Vdx-fW-W8G" secondAttribute="centerY" id="hJz-OM-aSk"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="35o-yf-avu"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="radialCurve" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
                             <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mh9-M0-Soi">
                                 <rect key="frame" x="8" y="966" width="50" height="50"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gcs-13-7sw">
@@ -1074,7 +1130,6 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="home:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yYy-qc-7h8"/>
-                                                            <action selector="toggleDeckEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="je8-Ai-bWR"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1308,6 +1363,16 @@
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwF-es-0Wt">
+                                <rect key="frame" x="171" y="0.0" width="1024" height="1024"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MwF-es-0Wt" secondAttribute="height" multiplier="1:1" id="chw-4j-7gD"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="dismissQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rth-Qg-210"/>
+                                </connections>
+                            </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khk-yR-Dy2">
                                 <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                                 <connections>
@@ -1323,7 +1388,10 @@
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4ke-aV-1nS"/>
                             <constraint firstItem="Khk-yR-Dy2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yC-Y8-lRh"/>
                             <constraint firstItem="H1M-3y-yyQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7kS-DH-wsS"/>
+                            <constraint firstItem="MwF-es-0Wt" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8Hr-73-pqN"/>
+                            <constraint firstItem="MwF-es-0Wt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8ez-cb-Li8"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="width" secondItem="H1M-3y-yyQ" secondAttribute="width" id="Aa3-HN-NAa"/>
+                            <constraint firstItem="BzH-oy-uDK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="BFv-8H-rNn"/>
                             <constraint firstItem="2ft-5s-XTa" firstAttribute="width" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="width" id="LcU-sX-yuB">
                                 <variation key="heightClass=compact" constant="-32"/>
                             </constraint>
@@ -1336,6 +1404,8 @@
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bEP-Jk-BDq"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="height" secondItem="H1M-3y-yyQ" secondAttribute="height" id="eJe-dh-kqT"/>
                             <constraint firstItem="mh9-M0-Soi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="g8P-HD-jwg"/>
+                            <constraint firstItem="MwF-es-0Wt" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="gZd-jL-nCY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BzH-oy-uDK" secondAttribute="trailing" constant="8" id="hx7-2w-6RK"/>
                             <constraint firstItem="iyw-G8-ZtC" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.67" priority="998" id="jLu-TS-RfH"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerY" secondItem="H1M-3y-yyQ" secondAttribute="centerY" id="mWr-2N-IPF"/>
                             <constraint firstItem="0Oz-Gi-Swv" firstAttribute="centerX" secondItem="H1M-3y-yyQ" secondAttribute="centerX" id="nhL-0M-LhS"/>
@@ -1377,6 +1447,7 @@
                         <outlet property="deckPickContainerView" destination="Bwx-nU-b53" id="IGf-PG-7Oy"/>
                         <outlet property="deckPicker" destination="DN6-gc-Pyd" id="OVd-gi-wPG"/>
                         <outlet property="editDeckButtonView" destination="Iay-Xi-D01" id="42z-1F-ify"/>
+                        <outlet property="qrCodeBtn" destination="MwF-es-0Wt" id="8E7-UZ-FHW"/>
                         <outlet property="setupView" destination="Khk-yR-Dy2" id="GEq-jr-HL7"/>
                         <outletCollection property="stacks" destination="gB6-7Z-pWJ" collectionClass="NSMutableArray" id="HZA-7x-aSA"/>
                         <outletCollection property="stacks" destination="Npc-qJ-6NE" collectionClass="NSMutableArray" id="MXB-nZ-Mwc"/>
@@ -1427,19 +1498,18 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G0-8t-l0i">
                                                 <rect key="frame" x="8" y="8" width="81.5" height="26.5"/>
                                                 <fontDescription key="fontDescription" name="SFProRounded-Semibold" family="SF Pro Rounded" pointSize="22"/>
-                                                <color key="textColor" systemColor="systemBlueColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJc-ee-xK9">
                                                 <rect key="frame" x="8" y="50.5" width="648" height="174.5"/>
-                                                <string key="text">This app was created to ensure access to FREE dyslexia resources as part of Google Innovator Project #dyslexicmindset. Visit www.dyslexicmindset.com  for more information.  (Click the brain to visit!)
-Special thanks to Brayden Gogis for creating this app to help millions of teachers and students on a global scale.</string>
-                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="18"/>
-                                                <color key="textColor" name="Text"/>
+                                                <mutableString key="text">This app was created to ensure access to FREE dyslexia resources as part of Nadine Gilkison's Google Innovator Project.  Special thanks to Brayden Gogis for creating this app to help millions of teachers and students on a global scale. Tap the brain for more FREE resources!</mutableString>
+                                                <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="19"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="VJc-ee-xK9" secondAttribute="trailing" constant="8" id="7rJ-sN-ta3"/>
                                             <constraint firstItem="5G0-8t-l0i" firstAttribute="leading" secondItem="z2Z-z7-ocm" secondAttribute="leading" constant="8" id="Gf1-gC-bha"/>
@@ -1597,7 +1667,7 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                                 </constraints>
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <state key="normal" image="gearshape" catalog="system">
-                                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="light"/>
+                                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="medium"/>
                                                                                 </state>
                                                                                 <connections>
                                                                                     <action selector="openSettings:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="IYl-Xw-88F"/>
@@ -1626,9 +1696,12 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                                                     <constraint firstAttribute="width" secondItem="dHL-a7-qWI" secondAttribute="height" multiplier="293:309" id="H7F-nC-hay"/>
                                                                                 </constraints>
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <state key="normal" image="square.and.arrow.up" catalog="system">
-                                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="25" scale="large" weight="light"/>
+                                                                                <state key="normal" image="qrcode.viewfinder" catalog="system">
+                                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="medium"/>
                                                                                 </state>
+                                                                                <connections>
+                                                                                    <segue destination="c4z-Gq-GWn" kind="presentation" id="ufQ-Lt-KcR"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1694,18 +1767,6 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                                                     </state>
                                                     <connections>
                                                         <action selector="createDeck:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="Hb9-BQ-9c7"/>
-                                                    </connections>
-                                                </button>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBq-mo-wLa">
-                                                    <rect key="frame" x="1320.5" y="20" width="25.5" height="41"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" image="qrcode.viewfinder" catalog="system">
-                                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="myDecks:" destination="LyI-Ie-9bW" eventType="touchUpInside" id="yJz-cc-my7"/>
-                                                        <segue destination="c4z-Gq-GWn" kind="showDetail" id="k7v-Yn-7sw"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -2987,7 +3048,6 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="teQ-C7-5qZ" secondAttribute="bottom" constant="8" id="NMY-aZ-CuK"/>
                             <constraint firstItem="teQ-C7-5qZ" firstAttribute="leading" secondItem="A3y-JD-7T5" secondAttribute="leading" constant="8" id="NhE-6I-upa"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="11t-St-QoE" secondAttribute="bottom" constant="8" id="QUJ-9t-7Sj"/>
-                            <constraint firstItem="A3y-JD-7T5" firstAttribute="trailing" secondItem="uBq-mo-wLa" secondAttribute="trailing" constant="20" id="R5a-mC-MPH"/>
                             <constraint firstItem="uwo-2W-7Cp" firstAttribute="leading" secondItem="edS-OS-nDi" secondAttribute="trailing" constant="8" id="VpW-BD-a4T"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="height" secondItem="hse-aG-MuQ" secondAttribute="height" id="VvP-vj-c53"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="bottom" secondItem="Zeb-d3-PHE" secondAttribute="bottom" id="aTo-X3-lbg"/>
@@ -2995,7 +3055,6 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
                             <constraint firstItem="THr-QI-htI" firstAttribute="width" secondItem="hse-aG-MuQ" secondAttribute="width" id="dCU-dR-WnD"/>
                             <constraint firstAttribute="trailing" secondItem="uwo-2W-7Cp" secondAttribute="trailing" id="gFc-u0-oA2"/>
                             <constraint firstItem="A3y-JD-7T5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tbj-Kx-hmr" secondAttribute="trailing" constant="8" id="gt1-tJ-HqB"/>
-                            <constraint firstItem="uBq-mo-wLa" firstAttribute="top" secondItem="A3y-JD-7T5" secondAttribute="top" constant="20" id="hhQ-Zn-WkS"/>
                             <constraint firstItem="THr-QI-htI" firstAttribute="centerY" secondItem="hse-aG-MuQ" secondAttribute="centerY" id="iTe-53-Du1"/>
                             <constraint firstItem="uwo-2W-7Cp" firstAttribute="width" secondItem="A3y-JD-7T5" secondAttribute="width" multiplier="0.6" id="j7O-hW-8il"/>
                             <constraint firstItem="yPE-Vx-flJ" firstAttribute="width" secondItem="A3y-JD-7T5" secondAttribute="width" multiplier="1/3" constant="-8" id="jRj-HX-efO"/>
@@ -3099,8 +3158,8 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
         <image name="paintbrush.fill" catalog="system" width="122" height="128"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
-        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <image name="square.stack" catalog="system" width="113" height="128"/>
         <image name="star.circle.fill" catalog="system" width="128" height="121"/>
@@ -3108,9 +3167,6 @@ Special thanks to Brayden Gogis for creating this app to help millions of teache
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="Dark Dim">
             <color red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Text">
-            <color red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

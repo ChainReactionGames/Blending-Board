@@ -10,6 +10,7 @@ extension Notification.Name {
 	static let packChosen = Notification.Name("Pack Chosen")
 }
 class BoardViewController: UIViewController, UIPickerViewDelegate {
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask { .landscape }
 	var doubleReg: Bool {
 		traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular
 	}
@@ -170,6 +171,28 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 
 	}
 	
+	@IBOutlet weak var qrCodeBtn: UIButton!
+	@IBAction func dismissQRCode(_ sender: UIButton) {
+		UIView.animate(withDuration: 0.2) {
+			sender.alpha = 0
+		}
+	}
+	@IBAction func qrCode(_ sender: Any) {
+		if let data = try? JSONEncoder().encode(pack) {
+			guard let qrFilter = CIFilter(name: "CIQRCodeGenerator") else { return }
+			let qrData = data
+			qrFilter.setValue(qrData, forKey: "inputMessage")
+
+			let qrTransform = CGAffineTransform(scaleX: 12, y: 12)
+			if let qrImage = qrFilter.outputImage?.transformed(by: qrTransform).transparent {
+				qrCodeBtn.setImage(UIImage(ciImage: qrImage), for: .normal)
+				UIView.animate(withDuration: 0.2) {
+					self.qrCodeBtn.alpha = 1
+				}
+			}
+		}
+		
+	}
 }
 extension UIView {
 	var stackViewHidden: Bool {
