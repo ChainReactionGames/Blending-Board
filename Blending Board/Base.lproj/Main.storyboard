@@ -1723,7 +1723,7 @@
                                                                     <constraint firstItem="hsc-JQ-U7L" firstAttribute="width" secondItem="hsc-JQ-U7L" secondAttribute="height" multiplier="1:1" id="ATi-EU-Wwr"/>
                                                                     <constraint firstAttribute="height" constant="80" id="bnz-kX-tIk"/>
                                                                     <constraint firstItem="0gu-Z6-w9P" firstAttribute="width" secondItem="0gu-Z6-w9P" secondAttribute="height" multiplier="1:1" id="c0s-jf-TaO"/>
-                                                                    <constraint firstAttribute="width" secondItem="4RU-jf-fY7" secondAttribute="height" multiplier="3" constant="16" id="hf9-y4-cr0"/>
+                                                                    <constraint firstAttribute="width" secondItem="4RU-jf-fY7" secondAttribute="height" multiplier="3" priority="750" constant="16" id="hf9-y4-cr0"/>
                                                                 </constraints>
                                                             </stackView>
                                                         </subviews>
@@ -3088,6 +3088,7 @@
                         <outlet property="letterSetEditorView" destination="uwo-2W-7Cp" id="iZm-nF-1G3"/>
                         <outlet property="mainView" destination="FVc-wp-h1a" id="AeG-1S-PoU"/>
                         <outlet property="myDecksView" destination="2yB-PX-ZZ7" id="pbM-CP-SWr"/>
+                        <outlet property="qrCodeBtn" destination="hsc-JQ-U7L" id="L5B-Ii-NkA"/>
                         <outlet property="setCreationView" destination="ZkH-LE-fFc" id="njT-ub-2P6"/>
                         <outlet property="setStack" destination="edS-OS-nDi" id="BDP-YY-A7N"/>
                         <outlet property="settingsView" destination="bkC-1u-P3e" id="WNQ-Tu-cCJ"/>

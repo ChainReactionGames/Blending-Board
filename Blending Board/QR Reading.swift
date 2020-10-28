@@ -13,8 +13,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 	var previewLayer: AVCaptureVideoPreviewLayer!
 
 	@IBOutlet weak var qrCameraView: UIView!
-	override func viewDidLoad() {
-		super.viewDidLoad()
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
 
 		view.backgroundColor = UIColor.black
 		captureSession = AVCaptureSession()

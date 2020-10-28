@@ -15,7 +15,7 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular
 	}
     @IBOutlet var stacks: [CardStack]!
-	@IBOutlet weak var setupView: UIView!
+	@IBOutlet weak var setupView: UIView?
 	var pack = LetterPack.standardOpen
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		UIView.animate(withDuration: 0.25) { [self] in
 			cardStackView.alpha = 1
 		} completion: { [self] (_) in
-			setupView.isHidden = true
+			setupView?.isHidden = true
 		}
 	}
 	func setupStacks() {
@@ -163,12 +163,11 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		updateRadius(of: colorPickerContainer, basedOn: colorScrollView)
 	}
 	@IBAction func home(_ sender: UIButton) {
-		setupView.isHidden = false
+		setupView?.isHidden = false
 		UIView.animate(withDuration: 0.25) {
 			self.cardStackView.alpha = 0
 		}
 		children.compactMap({ $0 as? IntroViewController }).first?.home()
-
 	}
 	
 	@IBOutlet weak var qrCodeBtn: UIButton!

@@ -105,7 +105,7 @@ struct Blending_Board_Widget: Widget {
             Blending_Board_WidgetEntryView(entry: entry)
         }
         .configurationDisplayName("Blending Board Widget")
-        .description("This is an example widget.")
+        .description("This widget displays a random set of letters to practice identifying words by sight throughout the day.")
 		.supportedFamilies([.systemMedium])
     }
 }

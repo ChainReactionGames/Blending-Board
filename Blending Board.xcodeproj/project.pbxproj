@@ -12,13 +12,30 @@
 		5942656A25104FF100B73AB1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942656925104FF100B73AB1 /* IntroViewController.swift */; };
 		59705DF32523F5CB00458E50 /* DidactGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */; };
 		59C87B36252398AC004A46FC /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C87B35252398AC004A46FC /* Haptic.swift */; };
+		59CE20F52529007A00C9DC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE20F42529007A00C9DC6F /* AppDelegate.swift */; };
+		59CE20F72529007A00C9DC6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE20F62529007A00C9DC6F /* SceneDelegate.swift */; };
+		59CE20F92529007A00C9DC6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE20F82529007A00C9DC6F /* ViewController.swift */; };
+		59CE20FC2529007A00C9DC6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CE20FA2529007A00C9DC6F /* Main.storyboard */; };
+		59CE20FE2529007C00C9DC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59CE20FD2529007C00C9DC6F /* Assets.xcassets */; };
+		59CE21012529007C00C9DC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59CE20FF2529007C00C9DC6F /* LaunchScreen.storyboard */; };
+		59CE210D2529007D00C9DC6F /* Blending_Board_ClipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE210C2529007D00C9DC6F /* Blending_Board_ClipTests.swift */; };
+		59CE21182529007D00C9DC6F /* Blending_Board_ClipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE21172529007D00C9DC6F /* Blending_Board_ClipUITests.swift */; };
+		59CE211C2529007D00C9DC6F /* Blending Board Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 59CE20F22529007A00C9DC6F /* Blending Board Clip.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59CE21362529016E00C9DC6F /* LetterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8007E24B3CD5B0082F71C /* LetterCard.swift */; };
+		59CE21382529016E00C9DC6F /* QR Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5918138E252762ED008A9C5F /* QR Reading.swift */; };
+		59CE213B2529016E00C9DC6F /* Letter Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA224B383900082A4AA /* Letter Set.swift */; };
+		59CE213D2529016E00C9DC6F /* Letter Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8391DDA424B383C10082A4AA /* Letter Pack.swift */; };
+		59CE214F2529032100C9DC6F /* DidactGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */; };
+		59CE215E2529038F00C9DC6F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8008024B3D28D0082F71C /* Colors.xcassets */; };
+		59CE21CB252A6F4800C9DC6F /* Color Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE21CA252A6F4800C9DC6F /* Color Views.swift */; };
+		59CE21F2252A702800C9DC6F /* Letter Pack Saving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CE21F1252A702800C9DC6F /* Letter Pack Saving.swift */; };
 		59E2DE29251563970045F02E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E2DE28251563970045F02E /* WidgetKit.framework */; platformFilter = ios; };
 		59E2DE2B251563970045F02E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E2DE2A251563970045F02E /* SwiftUI.framework */; };
 		59E2DE2E251563970045F02E /* Blending_Board_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2D251563970045F02E /* Blending_Board_Widget.swift */; };
 		59E2DE31251563990045F02E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E2DE30251563990045F02E /* Assets.xcassets */; };
 		59E2DE33251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */; };
 		59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE2F251563970045F02E /* Blending_Board_Widget.intentdefinition */; };
-		59E2DE37251563990045F02E /* Blending Board WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59E2DE37251563990045F02E /* Blending Board WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		59E2DE4525156BD30045F02E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83B8008024B3D28D0082F71C /* Colors.xcassets */; };
 		59E2DE4B251583BF0045F02E /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E2DE4A251583BF0045F02E /* Defaults.swift */; };
 		8305207024B3C48100256516 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8391DDA824B385DC0082A4AA /* SF-Pro-Rounded-Black.otf */; };
@@ -46,6 +63,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		59CE21092529007D00C9DC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8391DD6524B376320082A4AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59CE20F12529007A00C9DC6F;
+			remoteInfo = "Blending Board Clip";
+		};
+		59CE21142529007D00C9DC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8391DD6524B376320082A4AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59CE20F12529007A00C9DC6F;
+			remoteInfo = "Blending Board Clip";
+		};
+		59CE211A2529007D00C9DC6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8391DD6524B376320082A4AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59CE20F12529007A00C9DC6F;
+			remoteInfo = "Blending Board Clip";
+		};
 		59E2DE35251563990045F02E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8391DD6524B376320082A4AA /* Project object */;
@@ -70,6 +108,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		59CE211D2529007D00C9DC6F /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				59CE211C2529007D00C9DC6F /* Blending Board Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59E2DE39251563990045F02E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +138,23 @@
 		5942656925104FF100B73AB1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		59C87B35252398AC004A46FC /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
 		59C87B3B2523F2CD004A46FC /* DidactGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DidactGothic-Regular.ttf"; sourceTree = "<group>"; };
+		59CE20F22529007A00C9DC6F /* Blending Board Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blending Board Clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CE20F42529007A00C9DC6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59CE20F62529007A00C9DC6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		59CE20F82529007A00C9DC6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59CE20FB2529007A00C9DC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59CE20FD2529007C00C9DC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59CE21002529007C00C9DC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59CE21022529007C00C9DC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CE21032529007C00C9DC6F /* Blending_Board_Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Blending_Board_Clip.entitlements; sourceTree = "<group>"; };
+		59CE21082529007D00C9DC6F /* Blending Board ClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blending Board ClipTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CE210C2529007D00C9DC6F /* Blending_Board_ClipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blending_Board_ClipTests.swift; sourceTree = "<group>"; };
+		59CE210E2529007D00C9DC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CE21132529007D00C9DC6F /* Blending Board ClipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blending Board ClipUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CE21172529007D00C9DC6F /* Blending_Board_ClipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blending_Board_ClipUITests.swift; sourceTree = "<group>"; };
+		59CE21192529007D00C9DC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59CE21CA252A6F4800C9DC6F /* Color Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Views.swift"; sourceTree = "<group>"; };
+		59CE21F1252A702800C9DC6F /* Letter Pack Saving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Letter Pack Saving.swift"; sourceTree = "<group>"; };
 		59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Blending Board WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E2DE28251563970045F02E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		59E2DE2A251563970045F02E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -130,6 +196,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		59CE20EF2529007A00C9DC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CE21052529007D00C9DC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CE21102529007D00C9DC6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59E2DE23251563970045F02E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +250,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59CE20F32529007A00C9DC6F /* Blending Board Clip */ = {
+			isa = PBXGroup;
+			children = (
+				59CE20F42529007A00C9DC6F /* AppDelegate.swift */,
+				59CE20F62529007A00C9DC6F /* SceneDelegate.swift */,
+				59CE20F82529007A00C9DC6F /* ViewController.swift */,
+				59CE20FA2529007A00C9DC6F /* Main.storyboard */,
+				59CE20FD2529007C00C9DC6F /* Assets.xcassets */,
+				59CE20FF2529007C00C9DC6F /* LaunchScreen.storyboard */,
+				59CE21022529007C00C9DC6F /* Info.plist */,
+				59CE21032529007C00C9DC6F /* Blending_Board_Clip.entitlements */,
+			);
+			path = "Blending Board Clip";
+			sourceTree = "<group>";
+		};
+		59CE210B2529007D00C9DC6F /* Blending Board ClipTests */ = {
+			isa = PBXGroup;
+			children = (
+				59CE210C2529007D00C9DC6F /* Blending_Board_ClipTests.swift */,
+				59CE210E2529007D00C9DC6F /* Info.plist */,
+			);
+			path = "Blending Board ClipTests";
+			sourceTree = "<group>";
+		};
+		59CE21162529007D00C9DC6F /* Blending Board ClipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59CE21172529007D00C9DC6F /* Blending_Board_ClipUITests.swift */,
+				59CE21192529007D00C9DC6F /* Info.plist */,
+			);
+			path = "Blending Board ClipUITests";
+			sourceTree = "<group>";
+		};
+		59CE21C2252A6F3800C9DC6F /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				833195A124BCB05A00F02010 /* Colors.swift */,
+				59CE21CA252A6F4800C9DC6F /* Color Views.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		59CE21E9252A701400C9DC6F /* Letter Pack */ = {
+			isa = PBXGroup;
+			children = (
+				8391DDA424B383C10082A4AA /* Letter Pack.swift */,
+				59CE21F1252A702800C9DC6F /* Letter Pack Saving.swift */,
+			);
+			path = "Letter Pack";
+			sourceTree = "<group>";
+		};
 		59E2DE27251563970045F02E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,7 +324,7 @@
 		833195A024BCB04B00F02010 /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				833195A124BCB05A00F02010 /* Colors.swift */,
+				59CE21C2252A6F3800C9DC6F /* Colors */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -199,6 +337,9 @@
 				8391DD8624B376330082A4AA /* Blending BoardTests */,
 				8391DD9124B376330082A4AA /* Blending BoardUITests */,
 				59E2DE2C251563970045F02E /* Blending Board Widget */,
+				59CE20F32529007A00C9DC6F /* Blending Board Clip */,
+				59CE210B2529007D00C9DC6F /* Blending Board ClipTests */,
+				59CE21162529007D00C9DC6F /* Blending Board ClipUITests */,
 				59E2DE27251563970045F02E /* Frameworks */,
 				8391DD6E24B376320082A4AA /* Products */,
 			);
@@ -211,6 +352,9 @@
 				8391DD8324B376330082A4AA /* Blending BoardTests.xctest */,
 				8391DD8E24B376330082A4AA /* Blending BoardUITests.xctest */,
 				59E2DE26251563970045F02E /* Blending Board WidgetExtension.appex */,
+				59CE20F22529007A00C9DC6F /* Blending Board Clip.app */,
+				59CE21082529007D00C9DC6F /* Blending Board ClipTests.xctest */,
+				59CE21132529007D00C9DC6F /* Blending Board ClipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,7 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				8391DDA224B383900082A4AA /* Letter Set.swift */,
-				8391DDA424B383C10082A4AA /* Letter Pack.swift */,
+				59CE21E9252A701400C9DC6F /* Letter Pack */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -287,6 +431,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		59CE20F12529007A00C9DC6F /* Blending Board Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CE21242529007D00C9DC6F /* Build configuration list for PBXNativeTarget "Blending Board Clip" */;
+			buildPhases = (
+				59CE20EE2529007A00C9DC6F /* Sources */,
+				59CE20EF2529007A00C9DC6F /* Frameworks */,
+				59CE20F02529007A00C9DC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blending Board Clip";
+			productName = "Blending Board Clip";
+			productReference = 59CE20F22529007A00C9DC6F /* Blending Board Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		59CE21072529007D00C9DC6F /* Blending Board ClipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CE21252529007D00C9DC6F /* Build configuration list for PBXNativeTarget "Blending Board ClipTests" */;
+			buildPhases = (
+				59CE21042529007D00C9DC6F /* Sources */,
+				59CE21052529007D00C9DC6F /* Frameworks */,
+				59CE21062529007D00C9DC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59CE210A2529007D00C9DC6F /* PBXTargetDependency */,
+			);
+			name = "Blending Board ClipTests";
+			productName = "Blending Board ClipTests";
+			productReference = 59CE21082529007D00C9DC6F /* Blending Board ClipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59CE21122529007D00C9DC6F /* Blending Board ClipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59CE21262529007D00C9DC6F /* Build configuration list for PBXNativeTarget "Blending Board ClipUITests" */;
+			buildPhases = (
+				59CE210F2529007D00C9DC6F /* Sources */,
+				59CE21102529007D00C9DC6F /* Frameworks */,
+				59CE21112529007D00C9DC6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59CE21152529007D00C9DC6F /* PBXTargetDependency */,
+			);
+			name = "Blending Board ClipUITests";
+			productName = "Blending Board ClipUITests";
+			productReference = 59CE21132529007D00C9DC6F /* Blending Board ClipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		59E2DE25251563970045F02E /* Blending Board WidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59E2DE3C251563990045F02E /* Build configuration list for PBXNativeTarget "Blending Board WidgetExtension" */;
@@ -312,11 +509,13 @@
 				8391DD6A24B376320082A4AA /* Frameworks */,
 				8391DD6B24B376320082A4AA /* Resources */,
 				59E2DE39251563990045F02E /* Embed App Extensions */,
+				59CE211D2529007D00C9DC6F /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				59E2DE36251563990045F02E /* PBXTargetDependency */,
+				59CE211B2529007D00C9DC6F /* PBXTargetDependency */,
 			);
 			name = "Blending Board";
 			productName = "Blending Board";
@@ -368,6 +567,17 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					59CE20F12529007A00C9DC6F = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					59CE21072529007D00C9DC6F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 59CE20F12529007A00C9DC6F;
+					};
+					59CE21122529007D00C9DC6F = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 59CE20F12529007A00C9DC6F;
+					};
 					59E2DE25251563970045F02E = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -401,11 +611,40 @@
 				8391DD8224B376330082A4AA /* Blending BoardTests */,
 				8391DD8D24B376330082A4AA /* Blending BoardUITests */,
 				59E2DE25251563970045F02E /* Blending Board WidgetExtension */,
+				59CE20F12529007A00C9DC6F /* Blending Board Clip */,
+				59CE21072529007D00C9DC6F /* Blending Board ClipTests */,
+				59CE21122529007D00C9DC6F /* Blending Board ClipUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		59CE20F02529007A00C9DC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CE21012529007C00C9DC6F /* LaunchScreen.storyboard in Resources */,
+				59CE20FE2529007C00C9DC6F /* Assets.xcassets in Resources */,
+				59CE20FC2529007A00C9DC6F /* Main.storyboard in Resources */,
+				59CE214F2529032100C9DC6F /* DidactGothic-Regular.ttf in Resources */,
+				59CE215E2529038F00C9DC6F /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CE21062529007D00C9DC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CE21112529007D00C9DC6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59E2DE24251563970045F02E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -453,6 +692,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		59CE20EE2529007A00C9DC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CE20F92529007A00C9DC6F /* ViewController.swift in Sources */,
+				59CE213B2529016E00C9DC6F /* Letter Set.swift in Sources */,
+				59CE21362529016E00C9DC6F /* LetterCard.swift in Sources */,
+				59CE20F52529007A00C9DC6F /* AppDelegate.swift in Sources */,
+				59CE20F72529007A00C9DC6F /* SceneDelegate.swift in Sources */,
+				59CE213D2529016E00C9DC6F /* Letter Pack.swift in Sources */,
+				59CE21382529016E00C9DC6F /* QR Reading.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CE21042529007D00C9DC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CE210D2529007D00C9DC6F /* Blending_Board_ClipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59CE210F2529007D00C9DC6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59CE21182529007D00C9DC6F /* Blending_Board_ClipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59E2DE22251563970045F02E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,9 +740,11 @@
 				8391DD7124B376320082A4AA /* AppDelegate.swift in Sources */,
 				8391DD7324B376320082A4AA /* SceneDelegate.swift in Sources */,
 				833195A224BCB05A00F02010 /* Colors.swift in Sources */,
+				59CE21CB252A6F4800C9DC6F /* Color Views.swift in Sources */,
 				59C87B36252398AC004A46FC /* Haptic.swift in Sources */,
 				59E2DE4B251583BF0045F02E /* Defaults.swift in Sources */,
 				5918138125269D5B008A9C5F /* Settings.swift in Sources */,
+				59CE21F2252A702800C9DC6F /* Letter Pack Saving.swift in Sources */,
 				83B8007F24B3CD5B0082F71C /* LetterCard.swift in Sources */,
 				59E2DE34251563990045F02E /* Blending_Board_Widget.intentdefinition in Sources */,
 				8391DDA324B383900082A4AA /* Letter Set.swift in Sources */,
@@ -501,8 +772,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		59CE210A2529007D00C9DC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59CE20F12529007A00C9DC6F /* Blending Board Clip */;
+			targetProxy = 59CE21092529007D00C9DC6F /* PBXContainerItemProxy */;
+		};
+		59CE21152529007D00C9DC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59CE20F12529007A00C9DC6F /* Blending Board Clip */;
+			targetProxy = 59CE21142529007D00C9DC6F /* PBXContainerItemProxy */;
+		};
+		59CE211B2529007D00C9DC6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59CE20F12529007A00C9DC6F /* Blending Board Clip */;
+			targetProxy = 59CE211A2529007D00C9DC6F /* PBXContainerItemProxy */;
+		};
 		59E2DE36251563990045F02E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 59E2DE25251563970045F02E /* Blending Board WidgetExtension */;
 			targetProxy = 59E2DE35251563990045F02E /* PBXContainerItemProxy */;
 		};
@@ -519,6 +806,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		59CE20FA2529007A00C9DC6F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59CE20FB2529007A00C9DC6F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59CE20FF2529007C00C9DC6F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59CE21002529007C00C9DC6F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		8391DD7624B376320082A4AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -538,6 +841,134 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		59CE211E2529007D00C9DC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blending Board Clip/Blending_Board_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board Clip/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crg.blendingBoard.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59CE211F2529007D00C9DC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Blending Board Clip/Blending_Board_Clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 17;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board Clip/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crg.blendingBoard.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59CE21202529007D00C9DC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board ClipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blending Board Clip.app/Blending Board Clip";
+			};
+			name = Debug;
+		};
+		59CE21212529007D00C9DC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board ClipTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-ClipTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blending Board Clip.app/Blending Board Clip";
+			};
+			name = Release;
+		};
+		59CE21222529007D00C9DC6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board ClipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Blending Board Clip";
+			};
+			name = Debug;
+		};
+		59CE21232529007D00C9DC6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCVX8L34UD;
+				INFOPLIST_FILE = "Blending Board ClipUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-ClipUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Blending Board Clip";
+			};
+			name = Release;
+		};
 		59E2DE3A251563990045F02E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,7 +976,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,11 +984,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -570,7 +1001,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board Widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,11 +1009,11 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.crg.blendingBoard.Blending-Board-Widget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -712,7 +1143,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -720,7 +1151,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.crg.blendingBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -737,7 +1168,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Blending Board/Blending Board.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = GCVX8L34UD;
 				INFOPLIST_FILE = "Blending Board/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -745,7 +1176,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.crg.blendingBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
@@ -843,6 +1274,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		59CE21242529007D00C9DC6F /* Build configuration list for PBXNativeTarget "Blending Board Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CE211E2529007D00C9DC6F /* Debug */,
+				59CE211F2529007D00C9DC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CE21252529007D00C9DC6F /* Build configuration list for PBXNativeTarget "Blending Board ClipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CE21202529007D00C9DC6F /* Debug */,
+				59CE21212529007D00C9DC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59CE21262529007D00C9DC6F /* Build configuration list for PBXNativeTarget "Blending Board ClipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59CE21222529007D00C9DC6F /* Debug */,
+				59CE21232529007D00C9DC6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		59E2DE3C251563990045F02E /* Build configuration list for PBXNativeTarget "Blending Board WidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

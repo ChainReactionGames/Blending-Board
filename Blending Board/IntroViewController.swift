@@ -111,14 +111,17 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 	}
 	var selectedSets: [LetterSet] = []
 	let positions: [Int: LetterSet.Position] = [0: .beginning, 1: .middle, 2: .end]
-    override func viewDidLoad() {
+	@IBOutlet weak var qrCodeBtn: UIView!
+	override func viewDidLoad() {
         super.viewDidLoad()
 		selectedSets = LetterPack.standardOpen.sets
 		for collView in collectionViews {
 			collView.collectionViewLayout = generateLayout()
 		}
 		NotificationCenter.default.addObserver(self, selector: #selector(editStackBtnPressed(_:)), name: .init("Edit Letter Set"), object: nil)
-
+		#if targetEnvironment(macCatalyst)
+		qrCodeBtn.isHidden = true
+		#endif
     }
 	override func didMove(toParent parent: UIViewController?) {
 		super.didMove(toParent: parent)
@@ -489,7 +492,7 @@ class DeckCell: UICollectionViewCell {
 		leftSwipe.direction = .left
 		self.addGestureRecognizer(leftSwipe)
 		let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swiped))
-		leftSwipe.direction = .right
+		rightSwipe.direction = .right
 		self.addGestureRecognizer(rightSwipe)
 	}
 	@IBOutlet weak var trashView: UIVisualEffectView!

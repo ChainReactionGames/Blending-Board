@@ -17,20 +17,7 @@ struct LetterPack: Equatable, Codable {
 		[beginning, middle, end]
 	}
 }
-extension LetterPack: Saving {
-	static var key: String = "Saved Decks"
-	static var information: [LetterPack] {
-		get {
-			allPacks
-		}
-		set {
-			allPacks = newValue
-		}
-	}
-	
-	typealias DataType = [LetterPack]
-	
-	
+extension LetterPack {
     init(name: String?, _ sets: [LetterSet]) {
         let standardizedArray = sets + Array(repeating: LetterSet.none, count: 3 - sets.count)
         self = LetterPack(name: name, beginning: standardizedArray[0], middle: standardizedArray[1], end: standardizedArray[2])
@@ -43,18 +30,4 @@ extension LetterPack: Saving {
 	static var blendingDemo = LetterPack(name: "Blending Demo", beginning: LetterSet(name: "Bl", position: .beginning, letters: ["bl"]), middle: LetterSet(name: "e", position: .middle, letters: ["E"]), end: LetterSet(name: "Nd", position: .beginning, letters: ["nd"]))
 
     static let defaultPacks = [standardClosed, standardOpen, blendingDemo]
-	static var allPacks = defaultPacks {
-		didSet {
-			save()
-		}
-	}
-	static func getCurrentDeckFromDefaults() -> LetterPack {
-		guard let data = Defaults.value(for: "current deck", type: Data.self) else { return standardOpen }
-		return (try? JSONDecoder().decode(LetterPack.self, from: data)) ?? standardOpen
-	}
-	static var currentDeck = getCurrentDeckFromDefaults() {
-		didSet {
-			Defaults.set(currentDeck.jsonEncoded, for: "current deck")
-		}
-	}
 }
