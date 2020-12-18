@@ -17,6 +17,7 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
     @IBOutlet var stacks: [CardStack]!
 	@IBOutlet weak var setupView: UIView?
 	var pack = LetterPack.standardOpen
+	var unshuffledDeck = LetterPack.standardOpen
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,8 +31,12 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 	@objc func packConfirmed(_ notif: Notification) {
 		guard let pack = notif.object as? LetterPack else { return }
 		LetterPack.currentDeck = pack
+		unshuffledDeck = pack
 		newPack = pack
 		setupStacks()
+		if shuffling {
+			shuffleDeck()
+		}
 		UIView.animate(withDuration: 0.25) { [self] in
 			cardStackView.alpha = 1
 		} completion: { [self] (_) in
@@ -192,6 +197,46 @@ class BoardViewController: UIViewController, UIPickerViewDelegate {
 		}
 		
 	}
+	var shuffling = false {
+		didSet {
+			if shuffling {
+				shuffleDeck()
+			} else {
+				unshuffle()
+			}
+		}
+	}
+	
+	func shuffleDeck() {
+		var pack = newPack
+		pack.beginning.letters.shuffle()
+		pack.middle.letters.shuffle()
+		pack.end.letters.shuffle()
+		newPack = pack
+		setupStacks()
+	}
+	func unshuffle() {
+		newPack = unshuffledDeck
+		setupStacks()
+	}
+	@IBOutlet weak var shuffleBG: UIView!
+	@IBOutlet weak var shuffleBtn: UIButton!
+	func updateShuffleBtn() {
+		UIView.animate(withDuration: 0.2) { [self] in
+			if shuffling {
+				shuffleBtn.tintColor = .black
+				shuffleBG.alpha = 1
+			} else {
+				shuffleBtn.tintColor = shuffleBtn.superview!.tintColor
+				shuffleBG.alpha = 0
+			}
+		}
+	}
+	@IBAction func toggleShuffle(_ sender: UIButton) {
+		shuffling.toggle()
+		updateShuffleBtn()
+	}
+	
 }
 extension UIView {
 	var stackViewHidden: Bool {

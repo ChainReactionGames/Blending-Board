@@ -45,6 +45,8 @@ class TintAdjustingBackgroundImage: UIImageView {
 				return "backgroundGray"
 			case Colors.pumpkin:
 				return "backgroundPumpkin"
+			case Colors.winter:
+				return "backgroundWinter"
 			default:
 				return "defaultBackground"
 			}
