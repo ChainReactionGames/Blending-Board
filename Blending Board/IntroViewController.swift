@@ -62,6 +62,8 @@ class IntroViewController: UIViewController, UICollectionViewDelegate, UICollect
 		myDecksView.blur = blur
 	}
 	@IBAction func createDeck(_ sender: Any) {
+		selectedSets = LetterPack.standardOpen.sets
+		collectionViews.forEach({$0.reloadData()})
 		let width = self.view.bounds.width
 		self.setCreationView.transform = CGAffineTransform(translationX: -width, y: 0)
 		UIView.animateKeyframes(withDuration: 1, delay: 0, options: [.calculationModeCubic], animations: {
