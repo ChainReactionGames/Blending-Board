@@ -17,7 +17,7 @@ struct Colors {
     static let pink: UIColor = .systemPink
 	static let gray: UIColor = .systemGray
 	static var event: UIColor {
-		winter
+		pumpkin
 	}
 	static let pumpkin: UIColor = #colorLiteral(red: 1, green: 0.490264833, blue: 0, alpha: 1)
 	static let winter: UIColor = #colorLiteral(red: 0, green: 0.8774341941, blue: 0.720389602, alpha: 1)

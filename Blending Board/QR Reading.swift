@@ -8,6 +8,7 @@
 import AVFoundation
 import UIKit
 
+@available(macCatalyst 14.0, *)
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 	var captureSession: AVCaptureSession!
 	var previewLayer: AVCaptureVideoPreviewLayer!
